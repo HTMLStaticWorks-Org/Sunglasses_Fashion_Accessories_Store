@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Luxe Vision | Store Information & Concierge</title>
+  <meta name="description" content="Connect with LUXE VISION. Visit our flagship boutique, contact our styling concierge, or send an enquiry regarding our eyewear collections.">
+  
+  <!-- Open Graph Metadata -->
+  <meta property="og:title" content="Contact Luxe Vision | Store Information & Concierge">
+  <meta property="og:description" content="Reach our luxury eyewear and fashion accessories styling concierge. Boutique location and contact details.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1509695507497-903c140c43b0?auto=format&fit=crop&w=1200&q=80">
+
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       GLOBAL NAVIGATION BAR
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="luxe-container">
+      <div class="nav-inner">
+        
+        <!-- Brand Logo -->
+        <a href="index.html" class="luxe-logo" aria-label="LUXE VISION Homepage">
+          <div class="logo-monogram">
+            <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="22" cy="22" r="21" stroke="#C6A76A" stroke-width="1.2"/>
+              <path d="M12 14V30H22" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M22 14L28 30L34 14" stroke="#C6A76A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="16" cy="22" r="2.5" stroke="#C6A76A" stroke-width="1"/>
+              <circle cx="30" cy="22" r="2.5" stroke="currentColor" stroke-width="1"/>
+              <path d="M18.5 22H27.5" stroke="#C6A76A" stroke-width="1" stroke-dasharray="1 1"/>
+            </svg>
+          </div>
+          <div class="logo-text">
+            <span class="logo-title">LUXE VISION</span>
+            <span class="logo-subline">HAUTE EYEWEAR</span>
+          </div>
+        </a>
+
+        <!-- Center Navigation Links -->
+        <nav aria-label="Primary Navigation">
+          <ul class="nav-links">
+            <li><a href="index.html" class="nav-link-item">Home</a></li>
+            <li><a href="home-2.html" class="nav-link-item">Home 2</a></li>
+            <li><a href="products.html" class="nav-link-item">Products</a></li>
+            <li><a href="brands.html" class="nav-link-item">Brands</a></li>
+            <li><a href="contact.html" class="nav-link-item active">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Right Action Icons & CTA -->
+        <div class="nav-actions">
+          <button class="nav-icon-btn open-search-btn" aria-label="Open Search" title="Search catalog">
+            <i class="bi bi-search"></i>
+          </button>
+
+          <button class="nav-icon-btn open-wishlist-btn" aria-label="Open Wishlist" title="View Wishlist">
+            <i class="bi bi-heart"></i>
+            <span class="nav-badge wishlist-badge-count" style="display: none;">0</span>
+          </button>
+
+          <button class="nav-icon-btn open-bag-btn" aria-label="Open Shopping Bag" title="View Shopping Bag">
+            <i class="bi bi-bag"></i>
+            <span class="nav-badge bag-badge-count" style="display: none;">0</span>
+          </button>
+
+          <button class="nav-icon-btn theme-toggle-btn" aria-label="Toggle Theme" title="Toggle Light/Dark Theme">
+            <i class="bi bi-moon-stars"></i>
+          </button>
+
+          <!-- RTL Direction Toggle Button -->
+          <button class="nav-icon-btn rtl-toggle-btn" aria-label="Toggle RTL/LTR" title="Switch to RTL">
+            <span class="rtl-text">RTL</span>
+          </button>
+
+          <a href="products.html" class="btn-luxe btn-luxe-primary btn-luxe-sm nav-cta">Shop Now</a>
+
+          <button class="nav-hamburger-btn" aria-label="Toggle Mobile Menu" title="Menu">
+            <i class="bi bi-list"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       MOBILE OFF-CANVAS DRAWER
+       ========================================================================== -->
+  <aside class="mobile-nav-drawer" id="mobileNavDrawer" aria-label="Mobile Navigation">
+    <div class="mobile-nav-header">
+      <div class="luxe-logo">
+        <div class="logo-monogram">
+          <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="22" cy="22" r="21" stroke="#C6A76A" stroke-width="1.2"/>
+            <path d="M12 14V30H22" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M22 14L28 30L34 14" stroke="#C6A76A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="16" cy="22" r="2.5" stroke="#C6A76A" stroke-width="1"/>
+            <circle cx="30" cy="22" r="2.5" stroke="currentColor" stroke-width="1"/>
+            <path d="M18.5 22H27.5" stroke="#C6A76A" stroke-width="1" stroke-dasharray="1 1"/>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="logo-title">LUXE VISION</span>
+          <span class="logo-subline">HAUTE EYEWEAR</span>
+        </div>
+      </div>
+      <button class="mobile-nav-close" aria-label="Close Mobile Menu">
+        <i class="bi bi-x-lg"></i>
+      </button>
+    </div>
+
+    <ul class="mobile-nav-list">
+      <li><a href="index.html" class="mobile-nav-link">Home (Classic)</a></li>
+      <li><a href="home-2.html" class="mobile-nav-link">Home 2 (Editorial)</a></li>
+      <li><a href="products.html" class="mobile-nav-link">Products</a></li>
+      <li><a href="brands.html" class="mobile-nav-link">Brands</a></li>
+      <li><a href="contact.html" class="mobile-nav-link active">Contact</a></li>
+    </ul>
+
+    <div class="mobile-nav-footer">
+      <div class="mobile-nav-actions">
+        <button class="nav-icon-btn open-search-btn" aria-label="Search">
+          <i class="bi bi-search"></i>
+        </button>
+        <button class="nav-icon-btn open-wishlist-btn" aria-label="Wishlist">
+          <i class="bi bi-heart"></i>
+          <span class="nav-badge wishlist-badge-count" style="display: none;">0</span>
+        </button>
+        <button class="nav-icon-btn open-bag-btn" aria-label="Bag">
+          <i class="bi bi-bag"></i>
+          <span class="nav-badge bag-badge-count" style="display: none;">0</span>
+        </button>
+        <button class="nav-icon-btn theme-toggle-btn" aria-label="Theme">
+          <i class="bi bi-moon-stars"></i>
+        </button>
+        <button class="nav-icon-btn rtl-toggle-btn" aria-label="Toggle RTL/LTR" title="Switch to RTL">
+          <span class="rtl-text">RTL</span>
+        </button>
+      </div>
+      <a href="products.html" class="btn-luxe btn-luxe-primary w-100 text-center">Shop The Collection</a>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       HERO HEADER
+       ========================================================================== -->
+  <section class="section-spacer-sm" style="background-color: var(--bg-secondary); border-bottom: 1px solid var(--border-subtle);">
+    <div class="luxe-container">
+      <div class="section-header text-center mx-auto py-4 mb-0" style="max-width: 780px;">
+        <span class="section-eyebrow text-gold d-inline-block" style="padding-left: 0 !important;">CLIENT SERVICES</span>
+        <h1 class="h1-editorial mb-3 text-center">LET'S CONNECT WITH STYLE.</h1>
+        <p class="section-subtitle mx-auto mb-0" style="margin-left: auto; margin-right: auto; max-width: 600px;">
+          Have a question about our collections? Our team is here to help you find your perfect style.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTIONS 1, 2 & 3: STORE INFO, CONTACT CARDS & FORM
+       ========================================================================== -->
+  <main class="section-spacer" id="store-info">
+    <div class="luxe-container">
+      
+      <div class="contact-grid">
+        
+        <!-- Left: Store & Contact Information Cards -->
+        <div class="contact-info-panel">
+          
+          <div>
+            <span class="section-eyebrow">BOUTIQUE & CONCIERGE</span>
+            <h2 class="h2-editorial mb-3">FLAGSHIP PRESENCE</h2>
+            <p class="text-secondary small mb-4">
+              Step into our luxury flagship sanctuary or communicate directly with our dedicated styling advisors.
+            </p>
+          </div>
+
+                    <!-- Boutique Visual Experience -->
+          <div class="contact-card-box p-0 overflow-hidden mb-4">
+            <div style="height: 190px; width: 100%;">
+              <img src="assets/images/1xZ93dwdbeW4jYpLtTCV10HDCvyCqh0c1i3EpszsurTbykBrNQPqGqapxxBEfJd5cNEdeYavB1y3fD4B0ky9nqVig_tj9jLpSBxaG1Ybzi7LlKAGiDFxgbQ9dzKsTz5Aa-EhEcxRY71mJ1CpmM2dZLBkORH8nVHvet4jUqsvV.jpg" 
+                   alt="LUXE VISION Flagship Showroom" 
+                   style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div class="p-3">
+              <span class="placeholder-badge">Flagship Salon & Styling Lounge</span>
+              <p class="small text-secondary mt-2 mb-0">Experience personalized eyewear curation with complimentary ultrasonic optical adjustment.</p>
+            </div>
+          </div>
+
+          <!-- Boutique Visual Experience 2: Private Styling Lounge -->
+          <div class="contact-card-box p-0 overflow-hidden mb-4">
+            <div style="height: 190px; width: 100%;">
+              <img src="assets/images/9EFqExyNGDKsgno8VHMODH7GmZkGfM74xf5Nw3_Ms6xE2V_Atnl4pBGcwE3_7r4x0Zxp0D2kWGRugTvM_fhQv7wwCTkG_nikLtHP-BHMvC2Q3r9xOR6Ba2UZ3PottM9g9Fhp-NQGJP4vZqaG3Q42HjC-vUJb7H91GZJ5-cUrh.jpg" 
+                   alt="Private Styling Studio & Fitting Suite" 
+                   style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div class="p-3">
+              <span class="placeholder-badge">VIP Fitting Salon</span>
+              <p class="small text-secondary mt-2 mb-0">Book a private fitting session with our optical curators in our marble-appointed VIP suite.</p>
+            </div>
+          </div>
+          <!-- Card 1: Visit Boutique -->
+          <div class="contact-card-box">
+            <div class="icon-wrap">
+              <i class="bi bi-geo-alt"></i>
+            </div>
+            <h4>Visit Our Store</h4>
+            <div class="text-primary fw-semibold">LUXE VISION Flagship Boutique</div>
+            <p class="text-secondary">
+              104 Heritage Boulevard, Luxury Fashion Arcade<br>
+              Bangalore 560001, Karnataka, India
+            </p>
+            <span class="placeholder-badge">Editable Store Placeholder</span>
+          </div>
+
+          <!-- Card 2: Call Our Team -->
+          <div class="contact-card-box">
+            <div class="icon-wrap">
+              <i class="bi bi-telephone"></i>
+            </div>
+            <h4>Call Our Team</h4>
+            <p class="text-secondary">
+              Direct Concierge: <strong>+91 (80) 4567 8900</strong><br>
+              Toll-Free Styling: <strong>1800 200 LUXE (5893)</strong>
+            </p>
+            <span class="placeholder-badge">Editable Contact Placeholder</span>
+          </div>
+
+          <!-- Card 3: Email & Hours -->
+          <div class="contact-card-box">
+            <div class="icon-wrap">
+              <i class="bi bi-clock-history"></i>
+            </div>
+            <h4>Hours & Electronic Mail</h4>
+            <p class="text-secondary mb-2">
+              Email: <strong>concierge@luxevision-store.demo</strong>
+            </p>
+            <p class="text-secondary small">
+              Monday – Saturday: 10:30 AM – 9:00 PM IST<br>
+              Sunday: 11:00 AM – 8:00 PM IST
+            </p>
+            <span class="placeholder-badge">Editable Schedule Placeholder</span>
+          </div>
+
+        </div>
+
+        <!-- Right: Interactive Contact Form -->
+        <div class="contact-form-panel">
+          
+          <div class="mb-4">
+            <span class="section-eyebrow">SEND AN ENQUIRY</span>
+            <h3 class="font-heading h2 mb-2">Private Consultation & Questions</h3>
+            <p class="small text-muted">
+              Kindly complete the information below. Our private client team responds within 24 hours.
+            </p>
+          </div>
+
+          <!-- Demo Success Message -->
+          <div class="form-success-alert" id="contactSuccessAlert">
+            <div class="d-flex align-items-center gap-2 mb-1">
+              <i class="bi bi-check-circle-fill text-gold" style="font-size: 1.2rem; color: var(--accent-gold);"></i>
+              <strong style="color: var(--text-primary);">Enquiry Received (Frontend Demo)</strong>
+            </div>
+            <div class="small" style="color: var(--text-secondary);">
+              Thank you for reaching out to LUXE VISION. Your message has been validated successfully. (Demo Mode: No live email server connected).
+            </div>
+          </div>
+
+          <form id="luxeContactForm" novalidate>
+            
+            <!-- Full Name -->
+            <div class="form-group-luxe">
+              <label for="contactFullName" class="form-label-luxe">Full Name *</label>
+              <input type="text" id="contactFullName" class="form-control-luxe" placeholder="e.g. Alistair Vance" required>
+              <div class="form-feedback-error">Please enter your full name.</div>
+            </div>
+
+            <!-- Email & Phone Grid -->
+            <div class="row g-3">
+              <div class="col-md-6 form-group-luxe">
+                <label for="contactEmail" class="form-label-luxe">Email Address *</label>
+                <input type="email" id="contactEmail" class="form-control-luxe" placeholder="e.g. name@domain.com" required>
+                <div class="form-feedback-error">Please enter a valid email address.</div>
+              </div>
+
+              <div class="col-md-6 form-group-luxe">
+                <label for="contactPhone" class="form-label-luxe">Phone Number *</label>
+                <input type="tel" id="contactPhone" class="form-control-luxe" placeholder="e.g. 9876543210" required>
+                <div class="form-feedback-error">Please enter a valid 10-digit mobile number.</div>
+              </div>
+            </div>
+
+            <!-- Subject -->
+            <div class="form-group-luxe">
+              <label for="contactSubject" class="form-label-luxe">Subject of Enquiry *</label>
+              <select id="contactSubject" class="form-control-luxe" required>
+                <option value="">Select subject...</option>
+                <option value="Product Enquiry">Product Enquiry (Frame Fit / Optical Specs)</option>
+                <option value="Personal Styling">Boutique Styling Consultation</option>
+                <option value="Corporate Gifting">Corporate Gifting & Bespoke Orders</option>
+                <option value="Order Status">Order Status & Shipping Information</option>
+                <option value="General Feedback">General Feedback</option>
+              </select>
+              <div class="form-feedback-error">Please select an enquiry subject.</div>
+            </div>
+
+            <!-- Message -->
+            <div class="form-group-luxe">
+              <label for="contactMessage" class="form-label-luxe">Your Message *</label>
+              <textarea id="contactMessage" rows="5" class="form-control-luxe" placeholder="How may our concierge assist you today?" required></textarea>
+              <div class="form-feedback-error">Please provide your message (at least 10 characters).</div>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn-luxe btn-luxe-primary w-100 py-3">
+              <span>SEND MESSAGE</span>
+              <i class="bi bi-send"></i>
+            </button>
+
+            <div class="text-center mt-3">
+              <span class="small text-muted" style="font-size: 0.75rem;">
+                * Your contact information is kept private under strict confidentiality standards.
+              </span>
+            </div>
+
+          </form>
+
+          <!-- Original Boutique Location & Live Navigation (Eliminates Right-Side Empty Space) -->
+          <div class="contact-map-integration mt-4 pt-4 border-top" style="border-color: var(--border-subtle) !important;">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <div>
+                <span class="section-eyebrow text-gold d-block mb-1" style="font-size: 0.68rem; padding-left: 0 !important;">ATELIER NAVIGATION</span>
+                <h4 class="h4 text-white mb-0" style="font-size: 1.05rem; font-family: var(--font-heading);">ORIGINAL BOUTIQUE MAP</h4>
+              </div>
+              <a href="https://www.google.com/maps/dir/?api=1&destination=12.971598,77.594562" target="_blank" rel="noopener" class="btn-luxe btn-luxe-primary btn-luxe-sm">
+                <i class="bi bi-compass"></i> GET DIRECTIONS
+              </a>
+            </div>
+
+            <div class="rounded-1 overflow-hidden shadow-sm" style="height: 290px; border: 1px solid var(--border-main); background-color: #141416;">
+              <iframe 
+                title="LUXE VISION Flagship Boutique Map Navigation"
+                src="https://maps.google.com/maps?q=12.971598,77.594562&hl=en&z=15&output=embed" 
+                width="100%" 
+                height="100%" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+
+            <div class="d-flex flex-wrap align-items-center justify-content-between mt-3 text-secondary small" style="font-size: 0.8rem;">
+              <span><i class="bi bi-geo-alt-fill text-gold me-1"></i> 104 Heritage Boulevard, Bangalore 560001</span>
+              <span class="text-success"><i class="bi bi-check-circle-fill me-1"></i> Valet Parking Available</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ==========================================================================
+       SECTION 4: STORE LOCATION & ORIGINAL INTERACTIVE MAP
+       ========================================================================== -->
+  <section class="section-spacer-sm" id="boutique-map" style="background-color: var(--bg-secondary); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
+    <div class="luxe-container">
+      
+      <div class="section-header text-center mb-4">
+        <span class="section-eyebrow text-gold d-inline-block" style="padding-left: 0 !important;">BOUTIQUE MAP</span>
+        <h2 class="h2-editorial mb-2">FLAGSHIP STORE LOCATION</h2>
+        <p class="section-subtitle mx-auto" style="max-width: 600px;">
+          Centrally situated within the prestigious Luxury Fashion Arcade with dedicated concierge valet parking.
+        </p>
+      </div>
+
+      <div class="position-relative rounded-1 overflow-hidden shadow-lg" style="height: 480px; border: 1px solid var(--border-main); background-color: #141416;">
+        <!-- Real Interactive Google Map Embed -->
+        <iframe 
+          title="LUXE VISION Flagship Boutique Full Map"
+          src="https://maps.google.com/maps?q=12.971598,77.594562&hl=en&z=16&output=embed" 
+          width="100%" 
+          height="100%" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+
+        <!-- Floating Luxury Boutique Badge Card -->
+        <div class="map-overlay-card position-absolute bottom-0 start-0 m-3 m-md-4 text-start"
+          style="max-width: 380px; background: rgba(18, 18, 20, 0.94); backdrop-filter: blur(12px); border: 1px solid rgba(198, 167, 106, 0.4); padding: 1.5rem; box-shadow: 0 12px 32px rgba(0,0,0,0.45); z-index: 2;">
+          <div class="d-flex align-items-center justify-content-between mb-2">
+            <span class="badge" style="background-color: var(--accent-gold-soft); color: var(--accent-gold); font-size: 0.68rem; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 700; padding: 0.35rem 0.65rem;">FLAGSHIP BOUTIQUE</span>
+            <span class="small text-success fw-bold d-flex align-items-center gap-1" style="font-size: 0.72rem;">
+              <i class="bi bi-circle-fill" style="font-size: 0.45rem;"></i> Open Today
+            </span>
+          </div>
+          <h3 class="font-heading mb-1 text-white" style="font-size: 1.15rem;">LUXE VISION FLAGSHIP</h3>
+          <p class="small text-secondary mb-3" style="line-height: 1.45;">
+            104 Heritage Boulevard, Luxury Fashion Arcade<br>
+            Bangalore 560001, Karnataka, India<br>
+            <span class="text-muted" style="font-size: 0.75rem;">Coordinates: 12.9716° N, 77.5946° E</span>
+          </p>
+          <div class="d-flex gap-2">
+            <a href="https://www.google.com/maps/dir/?api=1&destination=12.971598,77.594562" target="_blank" rel="noopener" class="btn-luxe btn-luxe-primary btn-luxe-sm flex-grow-1 text-center justify-content-center">
+              <i class="bi bi-compass"></i> GET DIRECTIONS
+            </a>
+            <a href="tel:+918045678900" class="btn-luxe btn-luxe-secondary btn-luxe-sm" title="Call Concierge">
+              <i class="bi bi-telephone"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 5: FINAL CTA
+       ========================================================================== -->
+  <section class="section-spacer text-center">
+    <div class="luxe-container">
+      <span class="section-eyebrow text-gold" style="color: var(--accent-gold);">STYLE INSPIRATION</span>
+      <h2 class="h1-editorial mb-3">FIND YOUR NEXT FAVOURITE LOOK.</h2>
+      <p class="section-subtitle mx-auto mb-4">
+        Experience our complete range of designer sunglasses, precision watches, handcrafted leather belts, and streetwear caps.
+      </p>
+      <a href="products.html" class="btn-luxe btn-luxe-primary">
+        <span>EXPLORE PRODUCTS</span>
+        <i class="bi bi-arrow-right"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="luxe-container">
+      <div class="footer-top-grid">
+        
+        <!-- Brand Info Col -->
+        <div class="footer-brand-col">
+          <a href="index.html" class="luxe-logo">
+            <div class="logo-monogram">
+              <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="22" cy="22" r="21" stroke="#C6A76A" stroke-width="1.2"/>
+                <path d="M12 14V30H22" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M22 14L28 30L34 14" stroke="#C6A76A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="16" cy="22" r="2.5" stroke="#C6A76A" stroke-width="1"/>
+                <circle cx="30" cy="22" r="2.5" stroke="#FFFFFF" stroke-width="1"/>
+                <path d="M18.5 22H27.5" stroke="#C6A76A" stroke-width="1" stroke-dasharray="1 1"/>
+              </svg>
+            </div>
+            <div class="logo-text">
+              <span class="logo-title text-white">LUXE VISION</span>
+              <span class="logo-subline">HAUTE EYEWEAR</span>
+            </div>
+          </a>
+          
+          <div class="footer-tagline">SEE THE WORLD DIFFERENTLY.</div>
+          <p class="small text-muted" style="max-width: 380px;">
+            Where timeless style meets modern expression. Curating premier sunglasses and fine accessories for international connoisseurs.
+          </p>
+
+          <div class="newsletter-form-box">
+            <div class="small text-uppercase mb-2" style="font-size: 0.72rem; letter-spacing: 0.14em; color: var(--accent-gold);">
+              JOIN THE PRIVATE EDIT
+            </div>
+            <form class="newsletter-form">
+              <div class="newsletter-input-group">
+                <input type="email" class="newsletter-input" placeholder="Your email address" required aria-label="Email address for newsletter">
+                <button type="submit" class="newsletter-submit-btn" aria-label="Subscribe">
+                  <i class="bi bi-arrow-right"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="footer-col-title">QUICK LINKS</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html" class="footer-link">Home (Classic)</a></li>
+            <li><a href="home-2.html" class="footer-link">Home 2 (Editorial)</a></li>
+            <li><a href="products.html" class="footer-link">Products</a></li>
+            <li><a href="brands.html" class="footer-link">Brands</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Shop Categories -->
+        <div>
+          <h4 class="footer-col-title">SHOP CATEGORIES</h4>
+          <ul class="footer-links-list">
+            <li><a href="products.html?category=sunglasses" class="footer-link">Sunglasses</a></li>
+            <li><a href="products.html?category=watches" class="footer-link">Watches</a></li>
+            <li><a href="products.html?category=belts" class="footer-link">Belts</a></li>
+            <li><a href="products.html?category=caps" class="footer-link">Caps</a></li>
+          </ul>
+        </div>
+
+        <!-- Customer Support -->
+        <div>
+          <h4 class="footer-col-title">CUSTOMER CARE</h4>
+          <ul class="footer-links-list">
+            <li><a href="contact.html" class="footer-link">Contact Us</a></li>
+            <li><a href="contact.html#store-info" class="footer-link">Store Information</a></li>
+            <li><a href="javascript:void(0)" class="footer-link open-bag-btn">Shopping Bag</a></li>
+            <li><a href="javascript:void(0)" class="footer-link open-wishlist-btn">Wishlist</a></li>
+          </ul>
+
+          <div class="mt-4">
+            <h4 class="footer-col-title" style="margin-bottom: 0.8rem;">FOLLOW US</h4>
+            <div class="footer-social-row">
+              <a href="#" class="social-icon-circle" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="social-icon-circle" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="social-icon-circle" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+              <a href="#" class="social-icon-circle" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div>
+          &copy; 2026 LUXE VISION. All rights reserved. Premium Sunglasses & Fashion Accessories.
+        </div>
+        <div>
+          Designed for Luxury Fashion Editorial Commerce.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       SIDE DRAWERS, MODALS & GLOBAL OVERLAYS
+       ========================================================================== -->
+
+  <div class="backdrop-overlay" id="backdropOverlay"></div>
+
+  <!-- Shopping Bag Side Drawer -->
+  <aside class="side-drawer" id="bagDrawer" aria-label="Shopping Bag">
+    <div class="drawer-header">
+      <h3 class="font-heading">Shopping Bag</h3>
+      <button class="drawer-close-btn close-bag-btn" aria-label="Close bag">
+        <i class="bi bi-x-lg"></i>
+      </button>
+    </div>
+    <div class="drawer-body" id="bagDrawerBody"></div>
+    <div class="drawer-footer" id="bagDrawerFooter">
+      <div class="drawer-summary-row">
+        <span>Subtotal</span>
+        <span id="bagSubtotal">₹0</span>
+      </div>
+      <div class="drawer-summary-row small text-muted">
+        <span>Shipping & Insurance</span>
+        <span class="text-success">Complimentary</span>
+      </div>
+      <div class="drawer-summary-row drawer-summary-total">
+        <span>Estimated Total</span>
+        <span id="bagTotal">₹0</span>
+      </div>
+      <button class="btn-luxe btn-luxe-primary w-100 mt-3" onclick="showToast('Frontend Demo Experience: Checkout not connected to live payments.', 'bi-info-circle')">
+        PROCEED TO CHECKOUT
+      </button>
+      <div class="demo-notice">
+        Demo store experience • No real payment processed
+      </div>
+    </div>
+  </aside>
+
+  <!-- Wishlist Side Drawer -->
+  <aside class="side-drawer" id="wishlistDrawer" aria-label="Wishlist">
+    <div class="drawer-header">
+      <h3 class="font-heading">My Wishlist</h3>
+      <button class="drawer-close-btn close-wishlist-btn" aria-label="Close wishlist">
+        <i class="bi bi-x-lg"></i>
+      </button>
+    </div>
+    <div class="drawer-body" id="wishlistDrawerBody"></div>
+  </aside>
+
+  <!-- Search Overlay -->
+  <div class="search-overlay" id="searchOverlay" aria-label="Search Overlay">
+    <div class="search-overlay-inner">
+      <div class="search-overlay-header">
+        <button class="search-close-btn" aria-label="Close search">
+          <i class="bi bi-x-lg"></i>
+        </button>
+      </div>
+      <div class="search-input-large-wrap">
+        <i class="bi bi-search search-input-large-icon"></i>
+        <input type="text" id="searchLargeInput" class="search-input-large" placeholder="Search by name, category, or brand..." autocomplete="off">
+      </div>
+      <div class="search-live-results" id="searchLiveResults"></div>
+    </div>
+  </div>
+
+  <!-- Quick View Modal -->
+  <div class="modal fade" id="quickViewModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered quick-view-dialog">
+      <div class="modal-content modal-content-luxe">
+        <button type="button" class="modal-close-luxe" data-bs-dismiss="modal" aria-label="Close">
+          <i class="bi bi-x-lg"></i>
+        </button>
+        <div class="quickview-grid">
+          <div class="quickview-img-wrap">
+            <img id="qvImage" src="" alt="Product preview">
+          </div>
+          <div class="quickview-details">
+            <div id="qvBrand" class="quickview-brand">LUXE VISION</div>
+            <h3 id="qvTitle" class="quickview-title">Product Name</h3>
+            <div class="quickview-prices">
+              <span id="qvPrice" class="quickview-price-main">₹0</span>
+              <span id="qvPriceOrig" class="quickview-price-orig">₹0</span>
+            </div>
+            <p id="qvDescription" class="quickview-desc">Product description...</p>
+            <ul id="qvSpecs" class="quickview-specs"></ul>
+            <div class="quickview-actions">
+              <div class="drawer-qty-controls" style="height: 44px;">
+                <button class="drawer-qty-btn" onclick="const input = document.getElementById('qvQtyInput'); if(Number(input.value) > 1) input.value = Number(input.value) - 1;">-</button>
+                <input type="text" id="qvQtyInput" value="1" readonly class="text-center border-0 bg-transparent" style="width: 36px; font-weight: 600; color: inherit;">
+                <button class="drawer-qty-btn" onclick="const input = document.getElementById('qvQtyInput'); input.value = Number(input.value) + 1;">+</button>
+              </div>
+              <button id="qvAddBtn" class="btn-luxe btn-luxe-primary flex-grow-1" style="height: 44px;">
+                <i class="bi bi-bag-plus"></i> ADD TO BAG
+              </button>
+              <button id="qvWishlistBtn" class="card-action-btn" style="width: 44px; height: 44px; border-radius: 4px;" aria-label="Save to Wishlist">
+                <i class="bi bi-heart"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Container -->
+  <div class="toast-container-luxe" id="toastContainer"></div>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top-btn" id="backToTopBtn" aria-label="Back to top" title="Scroll to top">
+    <i class="bi bi-chevron-up"></i>
+  </button>
+
+  <!-- Bootstrap 5 Bundle JS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Main Script -->
+  <script src="assets/js/main.js"></script>
+
+  <!-- Contact Form Validation Script -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const form = document.getElementById("luxeContactForm");
+      const successAlert = document.getElementById("contactSuccessAlert");
+
+      if (form) {
+        form.addEventListener("submit", (e) => {
+          e.preventDefault();
+          let isValid = true;
+
+          const nameInput = document.getElementById("contactFullName");
+          const emailInput = document.getElementById("contactEmail");
+          const phoneInput = document.getElementById("contactPhone");
+          const subjectInput = document.getElementById("contactSubject");
+          const messageInput = document.getElementById("contactMessage");
+
+          // Validate Full Name
+          if (!nameInput.value.trim() || nameInput.value.trim().length < 2) {
+            nameInput.classList.add("is-invalid");
+            isValid = false;
+          } else {
+            nameInput.classList.remove("is-invalid");
+          }
+
+          // Validate Email
+          const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          if (!emailInput.value.trim() || !emailRegex.test(emailInput.value.trim())) {
+            emailInput.classList.add("is-invalid");
+            isValid = false;
+          } else {
+            emailInput.classList.remove("is-invalid");
+          }
+
+          // Validate Phone (at least 10 digits)
+          const cleanPhone = phoneInput.value.replace(/[^0-9]/g, "");
+          if (cleanPhone.length < 10) {
+            phoneInput.classList.add("is-invalid");
+            isValid = false;
+          } else {
+            phoneInput.classList.remove("is-invalid");
+          }
+
+          // Validate Subject
+          if (!subjectInput.value) {
+            subjectInput.classList.add("is-invalid");
+            isValid = false;
+          } else {
+            subjectInput.classList.remove("is-invalid");
+          }
+
+          // Validate Message
+          if (!messageInput.value.trim() || messageInput.value.trim().length < 10) {
+            messageInput.classList.add("is-invalid");
+            isValid = false;
+          } else {
+            messageInput.classList.remove("is-invalid");
+          }
+
+          if (isValid) {
+            form.reset();
+            if (successAlert) {
+              successAlert.style.display = "block";
+              successAlert.scrollIntoView({ behavior: "smooth", block: "center" });
+            }
+            showToast("Your consultation enquiry has been recorded.", "bi-check2-circle");
+          }
+        });
+
+        // Clear error on input
+        form.querySelectorAll("input, select, textarea").forEach(input => {
+          input.addEventListener("input", () => {
+            input.classList.remove("is-invalid");
+          });
+        });
+      }
+    });
+  </script>
+</body>
+</html>
+

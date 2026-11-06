@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luxe Vision | Haute Optics & Accessories Editorial</title>
+  <meta name="description"
+    content="Explore Home 2 of LUXE VISION. An ultra-luxury fashion editorial experience featuring runway eyewear capsules, precision timepieces, artisanal belts, and streetwear caps.">
+
+  <!-- Open Graph Metadata -->
+  <meta property="og:title" content="Luxe Vision | Haute Optics & Accessories Editorial">
+  <meta property="og:description"
+    content="Vision Redefined. Discover the Haute Optics Edit, bespoke capsules, and artisan accessories.">
+  <meta property="og:type" content="website">
+  <meta property="og:image"
+    content="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1200&q=80">
+
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- ==========================================================================
+       GLOBAL NAVIGATION BAR
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="luxe-container">
+      <div class="nav-inner">
+
+        <!-- Brand Logo -->
+        <a href="index.html" class="luxe-logo" aria-label="LUXE VISION Homepage">
+          <div class="logo-monogram">
+            <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="22" cy="22" r="21" stroke="#C6A76A" stroke-width="1.2" />
+              <path d="M12 14V30H22" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M22 14L28 30L34 14" stroke="#C6A76A" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <circle cx="16" cy="22" r="2.5" stroke="#C6A76A" stroke-width="1" />
+              <circle cx="30" cy="22" r="2.5" stroke="currentColor" stroke-width="1" />
+              <path d="M18.5 22H27.5" stroke="#C6A76A" stroke-width="1" stroke-dasharray="1 1" />
+            </svg>
+          </div>
+          <div class="logo-text">
+            <span class="logo-title">LUXE VISION</span>
+            <span class="logo-subline">HAUTE EYEWEAR</span>
+          </div>
+        </a>
+
+        <!-- Center Navigation Links -->
+        <nav aria-label="Primary Navigation">
+          <ul class="nav-links">
+            <li><a href="index.html" class="nav-link-item">Home</a></li>
+            <li><a href="home2.html" class="nav-link-item active">Home 2</a></li>
+            <li><a href="products.html" class="nav-link-item">Products</a></li>
+            <li><a href="brands.html" class="nav-link-item">Brands</a></li>
+            <li><a href="contact.html" class="nav-link-item">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Right Action Icons & CTA -->
+        <div class="nav-actions">
+          <button class="nav-icon-btn open-search-btn" aria-label="Open Search" title="Search catalog">
+            <i class="bi bi-search"></i>
+          </button>
+
+          <button class="nav-icon-btn open-wishlist-btn" aria-label="Open Wishlist" title="View Wishlist">
+            <i class="bi bi-heart"></i>
+            <span class="nav-badge wishlist-badge-count" style="display: none;">0</span>
+          </button>
+
+          <button class="nav-icon-btn open-bag-btn" aria-label="Open Shopping Bag" title="View Shopping Bag">
+            <i class="bi bi-bag"></i>
+            <span class="nav-badge bag-badge-count" style="display: none;">0</span>
+          </button>
+
+          <button class="nav-icon-btn theme-toggle-btn" aria-label="Toggle Theme" title="Toggle Light/Dark Theme">
+            <i class="bi bi-moon-stars"></i>
+          </button>
+
+          <!-- RTL Direction Toggle Button -->
+          <button class="nav-icon-btn rtl-toggle-btn" aria-label="Toggle RTL/LTR" title="Switch to RTL">
+            <span class="rtl-text">RTL</span>
+          </button>
+
+          <a href="products.html" class="btn-luxe btn-luxe-primary btn-luxe-sm nav-cta">Shop Now</a>
+
+          <button class="nav-hamburger-btn" aria-label="Toggle Mobile Menu" title="Menu">
+            <i class="bi bi-list"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       MOBILE OFF-CANVAS DRAWER
+       ========================================================================== -->
+  <aside class="mobile-nav-drawer" id="mobileNavDrawer" aria-label="Mobile Navigation">
+    <div class="mobile-nav-header">
+      <div class="luxe-logo">
+        <div class="logo-monogram">
+          <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="22" cy="22" r="21" stroke="#C6A76A" stroke-width="1.2" />
+            <path d="M12 14V30H22" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+              stroke-linejoin="round" />
+            <path d="M22 14L28 30L34 14" stroke="#C6A76A" stroke-width="1.8" stroke-linecap="round"
+              stroke-linejoin="round" />
+            <circle cx="16" cy="22" r="2.5" stroke="#C6A76A" stroke-width="1" />
+            <circle cx="30" cy="22" r="2.5" stroke="currentColor" stroke-width="1" />
+            <path d="M18.5 22H27.5" stroke="#C6A76A" stroke-width="1" stroke-dasharray="1 1" />
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="logo-title">LUXE VISION</span>
+          <span class="logo-subline">HAUTE EYEWEAR</span>
+        </div>
+      </div>
+      <button class="mobile-nav-close" aria-label="Close Mobile Menu">
+        <i class="bi bi-x-lg"></i>
+      </button>
+    </div>
+
+    <ul class="mobile-nav-list">
+      <li><a href="index.html" class="mobile-nav-link">Home (Classic)</a></li>
+      <li><a href="home2.html" class="mobile-nav-link active">Home 2 (Editorial)</a></li>
+      <li><a href="products.html" class="mobile-nav-link">Products</a></li>
+      <li><a href="brands.html" class="mobile-nav-link">Brands</a></li>
+      <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+    </ul>
+
+    <div class="mobile-nav-footer">
+      <div class="mobile-nav-actions">
+        <button class="nav-icon-btn open-search-btn" aria-label="Search">
+          <i class="bi bi-search"></i>
+        </button>
+        <button class="nav-icon-btn open-wishlist-btn" aria-label="Wishlist">
+          <i class="bi bi-heart"></i>
+          <span class="nav-badge wishlist-badge-count" style="display: none;">0</span>
+        </button>
+        <button class="nav-icon-btn open-bag-btn" aria-label="Bag">
+          <i class="bi bi-bag"></i>
+          <span class="nav-badge bag-badge-count" style="display: none;">0</span>
+        </button>
+        <button class="nav-icon-btn theme-toggle-btn" aria-label="Theme">
+          <i class="bi bi-moon-stars"></i>
+        </button>
+        <button class="nav-icon-btn rtl-toggle-btn" aria-label="Toggle RTL/LTR" title="Switch to RTL">
+          <span class="rtl-text">RTL</span>
+        </button>
+      </div>
+      <a href="products.html" class="btn-luxe btn-luxe-primary w-100 text-center">Shop The Collection</a>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       SECTION 1: THE MONOLITH CINEMATIC HERO
+       ========================================================================== -->
+  <section class="hero-cinematic" id="hero-cinematic">
+    <div class="hero-cinematic-bg"
+      style="background-image: url('assets/images/rwyFkzKw1758KryOENQLi61ArYkoBHZseh_QmAYqeOsZwpENGG5ODXM8lU1siR3-L7Cqy_M_YCN9yIyQy3s-Qj3XgSwyqxQQrPExwor7v9-fcWfY1JCeue1m37bPNHOf_WnOvEX3sQoI9JLvXBPmfJfS3jLz-uked59azqSct.jpg');">
+    </div>
+    <div class="hero-cinematic-overlay"></div>
+
+    <div class="luxe-container">
+      <div class="hero-cinematic-content">
+
+        <div class="hero-cinematic-pill">
+          <i class="bi bi-gem"></i>
+          <span>AUTUMN / WINTER 2026 ATELIER</span>
+        </div>
+
+        <h1 class="h1-editorial">
+          VISION REDEFINED.<br>
+          <span class="font-editorial" style="color: var(--accent-gold);">THE HAUTE OPTICS EDIT.</span>
+        </h1>
+
+        <p>
+          Where architectural silhouettes converge with hand-polished Italian acetate, surgical micro-alloys, and
+          crystal mineral optics. Curated for those who treat style as an uncompromising personal statement.
+        </p>
+
+        <div class="d-flex flex-wrap gap-3 mb-4">
+          <a href="products.html" class="btn-luxe btn-luxe-gold">
+            <span>EXPLORE ATELIER COLLECTION</span>
+            <i class="bi bi-arrow-right"></i>
+          </a>
+          <a href="#capsules" class="btn-luxe btn-luxe-secondary"
+            style="border-color: rgba(247, 245, 240, 0.4); color: #F7F5F0;">
+            <span>DISCOVER RUNWAY CAPSULES</span>
+          </a>
+        </div>
+
+        <div class="d-flex align-items-center gap-4 pt-3 border-top"
+          style="border-color: rgba(255, 255, 255, 0.15) !important;">
+          <div>
+            <span class="fw-bold d-block text-white">100% UV400</span>
+            <span class="small text-muted" style="font-size: 0.72rem; letter-spacing: 0.1em;">OPTICAL
+              POLARIZATION</span>
+          </div>
+          <div style="width: 1px; height: 28px; background-color: rgba(255, 255, 255, 0.2);"></div>
+          <div>
+            <span class="fw-bold d-block text-white">72H POLISH</span>
+            <span class="small text-muted" style="font-size: 0.72rem; letter-spacing: 0.1em;">ITALIAN ACETATE</span>
+          </div>
+          <div style="width: 1px; height: 28px; background-color: rgba(255, 255, 255, 0.2);"></div>
+          <div>
+            <span class="fw-bold d-block text-white">ATELIER VAULT</span>
+            <span class="small text-muted" style="font-size: 0.72rem; letter-spacing: 0.1em;">CURATED WORLDWIDE</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 2: RUNWAY REPORT — CURATED CAPSULES
+       ========================================================================== -->
+  <section class="section-spacer" id="capsules">
+    <div class="luxe-container">
+
+      <div class="section-header text-center">
+        <span class="section-eyebrow">TREND FORECAST</span>
+        <h2 class="h2-editorial">THE RUNWAY REPORT — CURATED CAPSULES</h2>
+        <p class="section-subtitle">
+          Three aesthetic movements defining contemporary eyewear, precision timepieces, and sartorial accents this
+          season.
+        </p>
+      </div>
+
+      <div class="capsule-grid">
+
+        <!-- Capsule 1 -->
+        <article class="capsule-card">
+          <div class="capsule-img-wrap">
+            <span class="capsule-overlay-badge">CAPSULE 01</span>
+            <img
+              src="assets/images/jPRVEBTxpQXZEKu2OgVMOFrcr7N6nEZousZhTT-isZsAtL84Njez4mG8EbKhLzP-zOFSrT2zWTnfDI2uKMIeA1gz7rK6B22krFL1CaQXlKvwwi6nSahuGIVvsURZpKRntdHCfH1cXpcc0g6_29Pb5Ayz40AYZN3g2INp9shx7.jpg"
+              alt="Obsidian Monolith Eyewear">
+          </div>
+          <div class="capsule-body">
+            <span class="capsule-season">MONOCHROME ARCHITECTURE</span>
+            <h3 class="capsule-title">The Obsidian Monolith</h3>
+            <p class="capsule-desc">
+              Sleek bevel-cut rectangular silhouettes sculpted from dense Italian block acetate with midnight smoke
+              polarized filters.
+            </p>
+            <a href="products.html?category=sunglasses" class="btn-text-link">
+              <span>EXPLORE BLACK EDIT</span>
+              <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- Capsule 2 -->
+        <article class="capsule-card">
+          <div class="capsule-img-wrap">
+            <span class="capsule-overlay-badge">CAPSULE 02</span>
+            <img
+              src="assets/images/vziIryqeUhm8qHOj1qInW8_mgiSLAsDDQuP8byQXFkylfl3nIh2A5ytBRZn-hPaaPNkMMjlHSjhDIkFAYXXEaw4vwRzPBwgF866dXv8QInyUwziB2poOtkr_3c7_PA0597tWWUkRJAowG2Ahtt6prRbo-AJnUPq_XaYl3kFQH.jpg"
+              alt="Champagne Gold Horology & Eyewear">
+          </div>
+          <div class="capsule-body">
+            <span class="capsule-season">LUMINOUS LUXURY</span>
+            <h3 class="capsule-title">Champagne Gold Horizon</h3>
+            <p class="capsule-desc">
+              Featherlight wireframes bathed in champagne gold plating, harmonizing with matching sunray chronograph
+              timepieces.
+            </p>
+            <a href="products.html?category=watches" class="btn-text-link">
+              <span>EXPLORE GOLD EDIT</span>
+              <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- Capsule 3 -->
+        <article class="capsule-card">
+          <div class="capsule-img-wrap">
+            <span class="capsule-overlay-badge">CAPSULE 03</span>
+            <img
+              src="assets/images/Vb-T75htgJCyShDnQoSnzcndaJH4CKhSPjOClivTqAoA9HpR-B3VB4JsOShQUQjLZliCnsANoLgZA_X11CdZKFt3BaCCOKklw5NGLA_6IUdjCMQZ9TlYj0DLGbOF39uJtKW36vZ41zUqqw1mo-5mkP0lsQzAK0_KtATUMMYoV.jpg"
+              alt="Minimal Streetwear & Artisanal Belts">
+          </div>
+          <div class="capsule-body">
+            <span class="capsule-season">METROPOLITAN EDGE</span>
+            <h3 class="capsule-title">Sartorial Streetwear</h3>
+            <p class="capsule-desc">
+              Heavy organic cotton twill caps crowned with understated 3D micro-emblems and burnished full-grain
+              reversible leather belts.
+            </p>
+            <a href="products.html?category=caps" class="btn-text-link">
+              <span>EXPLORE STREETWEAR</span>
+              <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 3: THE ARTISAN ACCENTS: TIME & LEATHER
+       ========================================================================== -->
+  <section class="section-spacer" style="background-color: var(--bg-secondary);">
+    <div class="luxe-container">
+
+      <div class="section-header">
+        <span class="section-eyebrow">HOROLOGY & LEATHER ATELIER</span>
+        <h2 class="h2-editorial">THE ARTISAN ACCENTS: TIME & LEATHER</h2>
+        <p class="section-subtitle">
+          True personal elegance is defined by subtle precision. Discover our dual focus on Swiss-inspired chronographs
+          and Italian leathercraft.
+        </p>
+      </div>
+
+      <div class="atelier-split-grid">
+
+        <!-- Left: Horology Feature -->
+        <div class="atelier-feature-card">
+          <div class="atelier-feature-img">
+            <img
+              src="assets/images/IhZFCfjoqGIL3hPbKy_M9b97VoG0JcB9snSR-2_7ZQjLoV39WPeWIFZL_ERz6gCaZ07wrLc3JqYss9KWN2-fSYI89Q0THGWgmEgGp_xE1jbLRuVvJSiYeGdXHHXu5h7ogGLyGD0gDdaDA6HGYje3xPD7ehzC_MHQZkoG2URjy.jpg"
+              alt="Haute Horology Chronograph">
+          </div>
+          <div class="atelier-feature-body">
+            <span class="text-uppercase small fw-bold" style="color: var(--accent-gold); letter-spacing: 0.16em;">HAUTE
+              HOROLOGY</span>
+            <h3 class="font-heading mt-2 mb-3">Architectural Timepieces</h3>
+            <p class="text-secondary small">
+              Sculpted from 316L surgical stainless steel, our chronograph and dress watches feature anti-reflective
+              sapphire mineral glass, multi-functional sub-dials, and quick-release Tuscan calfskin straps.
+            </p>
+
+            <div class="spec-pill-group">
+              <span class="spec-pill">Japanese Quartz Movement</span>
+              <span class="spec-pill">5 ATM Water Resistance</span>
+              <span class="spec-pill">Sapphire Crystal Coat</span>
+              <span class="spec-pill">Surgical Steel 316L</span>
+            </div>
+
+            <a href="products.html?category=watches" class="btn-luxe btn-luxe-primary btn-luxe-sm">
+              <span>EXPLORE WATCHES</span>
+              <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Leather & Streetwear Feature -->
+        <div class="atelier-feature-card">
+          <div class="atelier-feature-img">
+            <img
+              src="assets/images/SiObDTCjgStGCXQdIjXbSY8t92ZGhDIfDoKw8YH-AoomyBtCMevKaOHja-icFPC55wssumZMcJy7JPBHjNt9qA7EtGxoCCfdVAfX3OTkWJ2fn0JjQjoAW9JdIYuXUxTKsJPz69c8cgunTBGQYetK3eF8cPsnbHZhP6aYCk49U.jpg"
+              alt="Artisanal Leather Belts and Hardware">
+          </div>
+          <div class="atelier-feature-body">
+            <span class="text-uppercase small fw-bold"
+              style="color: var(--accent-gold); letter-spacing: 0.16em;">ARTISANAL LEATHERWORK</span>
+            <h3 class="font-heading mt-2 mb-3">Full-Grain Belts & Signature Caps</h3>
+            <p class="text-secondary small">
+              Hand-finished vegetable-tanned hides from European tanneries paired with sculptural Champagne Gold and
+              brushed nickel hardware. Complete your ensemble with organic cotton twill streetwear caps.
+            </p>
+
+            <div class="spec-pill-group">
+              <span class="spec-pill">100% Full-Grain Leather</span>
+              <span class="spec-pill">360° Reversible Systems</span>
+              <span class="spec-pill">Sculptural Hardware</span>
+              <span class="spec-pill">Organic Cotton Twill</span>
+            </div>
+
+            <a href="products.html?category=belts" class="btn-luxe btn-luxe-primary btn-luxe-sm">
+              <span>EXPLORE BELTS & CAPS</span>
+              <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 4: ICONIC ARCHIVES — BESTSELLER SELECTION
+       ========================================================================== -->
+  <section class="section-spacer" id="bestsellers">
+    <div class="luxe-container">
+
+      <div class="section-header text-center">
+        <span class="section-eyebrow">VAULT HIGHLIGHTS</span>
+        <h2 class="h2-editorial">ICONIC ARCHIVES — BESTSELLER SELECTION</h2>
+        <p class="section-subtitle">
+          Six signature creations setting the international standard for luxury eyewear and fashion accessories.
+        </p>
+      </div>
+
+      <!-- 6 Curated Cards Grid -->
+      <div class="row g-4" id="home2ProductsGrid">
+        <div class="col-md-6 col-lg-4">
+          <div class="product-card" data-category="sunglasses" data-brand="Oakley" data-product-id="2">
+            <div class="product-image-wrap">
+              <img src="assets/images/zHHHblwI6F1cdL_qODhdqsNgDrVxmsEJsvM60ezTktEHRjE22MUUTJcXW5lwlyDxkUGagxkEHNa6iQhiz9G0Vxj3GSzXa1nIW6MTmUNJ0clGaDk5zpTjH8Bq807kmD1wzo2DvnPp9NbdCYxioT-vm46Ng499AbZcWX026K0H9.jpg" alt="Noir Classic Square Sunglasses" loading="lazy">
+              <span class="product-badge ">Bestseller</span>
+              <div class="product-card-actions">
+                <button class="card-action-btn " data-wishlist-id="2" onclick="toggleWishlist(2)" title="Save to Wishlist" aria-label="Wishlist">
+                  <i class="bi bi-heart"></i>
+                </button>
+              </div>
+              <button class="quick-view-overlay-btn" onclick="openQuickView(2)">
+                <i class="bi bi-eye"></i> Quick View
+              </button>
+            </div>
+            <div class="product-content">
+              <div class="product-brand">Oakley • sunglasses</div>
+              <h3 class="product-title">Noir Classic Square Sunglasses</h3>
+              <div class="product-meta">
+                <span class="product-price">₹7,490</span>
+                <span class="product-price-orig">₹8,990</span>
+              </div>
+              <div class="product-card-footer">
+                <button class="btn-add-bag" onclick="addToBag(2)">
+                  <i class="bi bi-bag-plus"></i> Add to Bag
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="product-card" data-category="sunglasses" data-brand="Vogue Eyewear" data-product-id="3">
+            <div class="product-image-wrap">
+              <img src="assets/images/UKC_eoQDdVyn1cklhMO-J_Hg62GL_V6OI7j4rDFio63IRbasOKCo4RCYifG2CFy0Uwp4EgSjA22kbpeGIntEXY7FIEqzT-5A0SRn13KjZQ_6v5Q6PFRfubhrLnmPTq9Y8Cznz0i9o_usc3qQRGgfeVZuXs33s7Uan-tXAIuTi.jpg" alt="Aurora Oversized Sunglasses" loading="lazy">
+              <span class="product-badge gold">New Arrival</span>
+              <div class="product-card-actions">
+                <button class="card-action-btn " data-wishlist-id="3" onclick="toggleWishlist(3)" title="Save to Wishlist" aria-label="Wishlist">
+                  <i class="bi bi-heart"></i>
+                </button>
+              </div>
+              <button class="quick-view-overlay-btn" onclick="openQuickView(3)">
+                <i class="bi bi-eye"></i> Quick View
+              </button>
+            </div>
+            <div class="product-content">
+              <div class="product-brand">Vogue Eyewear • sunglasses</div>
+              <h3 class="product-title">Aurora Oversized Sunglasses</h3>
+              <div class="product-meta">
+                <span class="product-price">₹9,290</span>
+                <span class="product-price-orig">₹11,500</span>
+              </div>
+              <div class="product-card-footer">
+                <button class="btn-add-bag" onclick="addToBag(3)">
+                  <i class="bi bi-bag-plus"></i> Add to Bag
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="product-card" data-category="watches" data-brand="Fossil" data-product-id="9">
+            <div class="product-image-wrap">
+              <img src="assets/images/IhZFCfjoqGIL3hPbKy_M9b97VoG0JcB9snSR-2_7ZQjLoV39WPeWIFZL_ERz6gCaZ07wrLc3JqYss9KWN2-fSYI89Q0THGWgmEgGp_xE1jbLRuVvJSiYeGdXHHXu5h7ogGLyGD0gDdaDA6HGYje3xPD7ehzC_MHQZkoG2URjy.jpg" alt="Urban Edge Premium Watch" loading="lazy">
+              <span class="product-badge gold">New Arrival</span>
+              <div class="product-card-actions">
+                <button class="card-action-btn " data-wishlist-id="9" onclick="toggleWishlist(9)" title="Save to Wishlist" aria-label="Wishlist">
+                  <i class="bi bi-heart"></i>
+                </button>
+              </div>
+              <button class="quick-view-overlay-btn" onclick="openQuickView(9)">
+                <i class="bi bi-eye"></i> Quick View
+              </button>
+            </div>
+            <div class="product-content">
+              <div class="product-brand">Fossil • watches</div>
+              <h3 class="product-title">Urban Edge Premium Watch</h3>
+              <div class="product-meta">
+                <span class="product-price">₹14,990</span>
+                <span class="product-price-orig">₹17,990</span>
+              </div>
+              <div class="product-card-footer">
+                <button class="btn-add-bag" onclick="addToBag(9)">
+                  <i class="bi bi-bag-plus"></i> Add to Bag
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="product-card" data-category="belts" data-brand="Tommy Hilfiger" data-product-id="15">
+            <div class="product-image-wrap">
+              <img src="assets/images/ifLdAmkfVHTYc4_Qi3mCObSnVYuggS_G5VCT1mdf0hkuigmJohZRkNuEvOsoc1zhZ6fEWhMjFEop5AcKa-932ecOmLbs899rDq-pgkvMulg_OMeFDAcJyQmdxwyeEak5fdpt3JqvFMrkGIaGPg33QjsSLciCx-H0PBibRXYSi.jpg" alt="Signature Leather Belt" loading="lazy">
+              <span class="product-badge gold">New Arrival</span>
+              <div class="product-card-actions">
+                <button class="card-action-btn " data-wishlist-id="15" onclick="toggleWishlist(15)" title="Save to Wishlist" aria-label="Wishlist">
+                  <i class="bi bi-heart"></i>
+                </button>
+              </div>
+              <button class="quick-view-overlay-btn" onclick="openQuickView(15)">
+                <i class="bi bi-eye"></i> Quick View
+              </button>
+            </div>
+            <div class="product-content">
+              <div class="product-brand">Tommy Hilfiger • belts</div>
+              <h3 class="product-title">Signature Leather Belt</h3>
+              <div class="product-meta">
+                <span class="product-price">₹4,290</span>
+                <span class="product-price-orig">₹5,290</span>
+              </div>
+              <div class="product-card-footer">
+                <button class="btn-add-bag" onclick="addToBag(15)">
+                  <i class="bi bi-bag-plus"></i> Add to Bag
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="product-card" data-category="belts" data-brand="Police" data-product-id="18">
+            <div class="product-image-wrap">
+              <img src="assets/images/ooHgxi5JaoxgoYBG3l4aKJtviMlilputJ2A1D-15A48hBUr_GWgAyGeomJKfNsTLZg79s7blgIp33rpkatBvgDZFchY_26Vg0W0bVbZdq2vG93eVdg9oLzcIE8k-8YY1YgO9MJRrbl_TTuta9UgH1sQWiy2wzR79HcLZ1mk9U.jpg" alt="Signature Reversible Belt" loading="lazy">
+              <span class="product-badge ">Versatile</span>
+              <div class="product-card-actions">
+                <button class="card-action-btn " data-wishlist-id="18" onclick="toggleWishlist(18)" title="Save to Wishlist" aria-label="Wishlist">
+                  <i class="bi bi-heart"></i>
+                </button>
+              </div>
+              <button class="quick-view-overlay-btn" onclick="openQuickView(18)">
+                <i class="bi bi-eye"></i> Quick View
+              </button>
+            </div>
+            <div class="product-content">
+              <div class="product-brand">Police • belts</div>
+              <h3 class="product-title">Signature Reversible Belt</h3>
+              <div class="product-meta">
+                <span class="product-price">₹5,290</span>
+                <span class="product-price-orig">₹6,490</span>
+              </div>
+              <div class="product-card-footer">
+                <button class="btn-add-bag" onclick="addToBag(18)">
+                  <i class="bi bi-bag-plus"></i> Add to Bag
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="product-card" data-category="caps" data-brand="Oakley" data-product-id="19">
+            <div class="product-image-wrap">
+              <img src="assets/images/TLdldEx9kBKBZP6X5shLjD89uuWA_uxH9WBzbyZtjrvX3NTT2_XdIBpSNp_V2b205MUsKpxkG4sK6CgjF3oFYEVHeO_nTSn_OSO0UKq8lvpiYzNBAKS35Od4GJ3wdSWB2FUR58AkTfnJvJEpBN81AEyFInBPukJDFKiPF0x1j.jpg" alt="Minimal Streetwear Cap" loading="lazy">
+              <span class="product-badge gold">New Arrival</span>
+              <div class="product-card-actions">
+                <button class="card-action-btn " data-wishlist-id="19" onclick="toggleWishlist(19)" title="Save to Wishlist" aria-label="Wishlist">
+                  <i class="bi bi-heart"></i>
+                </button>
+              </div>
+              <button class="quick-view-overlay-btn" onclick="openQuickView(19)">
+                <i class="bi bi-eye"></i> Quick View
+              </button>
+            </div>
+            <div class="product-content">
+              <div class="product-brand">Oakley • caps</div>
+              <h3 class="product-title">Minimal Streetwear Cap</h3>
+              <div class="product-meta">
+                <span class="product-price">₹2,490</span>
+                <span class="product-price-orig">₹3,190</span>
+              </div>
+              <div class="product-card-footer">
+                <button class="btn-add-bag" onclick="addToBag(19)">
+                  <i class="bi bi-bag-plus"></i> Add to Bag
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-5">
+        <a href="products.html" class="btn-luxe btn-luxe-secondary">
+          <span>BROWSE COMPLETE 24-PIECE CATALOGUE</span>
+          <i class="bi bi-arrow-right"></i>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 5: ENGINEERED FOR PERFECTION (4 CRAFTSMANSHIP PILLARS)
+       ========================================================================== -->
+  <section class="section-spacer" style="background-color: var(--bg-secondary);">
+    <div class="luxe-container">
+
+      <div class="section-header text-center">
+        <span class="section-eyebrow">UNCOMPROMISING STANDARDS</span>
+        <h2 class="h2-editorial">ENGINEERED FOR PERFECTION.</h2>
+        <p class="section-subtitle">
+          Every piece in the LUXE VISION collection must satisfy our four rigorous criteria of material integrity and
+          optical precision.
+        </p>
+      </div>
+
+      <div class="craft-pillars-grid">
+
+        <!-- Pillar 01 -->
+        <div class="craft-pillar-card">
+          <span class="craft-num">01</span>
+          <div class="mb-3 rounded overflow-hidden" style="height: 120px; background-color: var(--bg-tertiary);">
+            <img
+              src="assets/images/cZ_R0JsXAwuFjIxNyCpJrNSMvY_2sxC0toAureuLaL_93H-rz6_L97_i1m6A_8thb8fWI6KuZtxBIDsWPBISHsrSmOki5AjTytR18d11C2edfBsN6I9b_5xV34K4oAmg2kxEZxLQAT-95p621QW3HEFNIDLTTLaFVUDqUB6vo.jpg"
+              alt="72H Italian Polish Macro" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <h3>72H Italian Polish</h3>
+          <p>
+            Cellulose acetate blocks are tumbled in beechwood pegs and pumice for seventy-two hours, ensuring a radiant,
+            mirror-smooth obsidian sheen.
+          </p>
+        </div>
+
+        <!-- Pillar 02 -->
+        <div class="craft-pillar-card">
+          <span class="craft-num">02</span>
+          <div class="mb-3 rounded overflow-hidden" style="height: 120px; background-color: var(--bg-tertiary);">
+            <img
+              src="assets/images/PNCykRouiKUBBtQuehZgqjaq1KlClxM4Zwi-uTc7_C7297e17fqCv8aFl0JrsjS4SRS2UyC4hxFaz3-UEXrTFRQbtnyhtla3HBXdaCTwQxYVvTJCJ2pXtUVqoc8DTd9xWxyPwv_djTchZhm1rgOY2-i13tTOsFmEqvR7cvhKT.jpg"
+              alt="UV400 Crystal Optics Lens" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <h3>UV400 Crystal Optics</h3>
+          <p>
+            Multi-coated anti-reflective mineral and nylon glass filters 100% of UVA and UVB rays while neutralizing
+            surface glare in intense light.
+          </p>
+        </div>
+
+        <!-- Pillar 03 -->
+        <div class="craft-pillar-card">
+          <span class="craft-num">03</span>
+          <div class="mb-3 rounded overflow-hidden" style="height: 120px; background-color: var(--bg-tertiary);">
+            <img
+              src="assets/images/7NPaxuciBjnqcFb5EqG0Wc92nb2KhGSBEBObR7nuU43aIda8tBQHX3xUJPyPVXQJ4jeiJT2krPw93240-8ZB2It1diMvhTFHXVch9sDsI8SNpA35XfxsZIir0vzZXy-ggzGPFOh29BNGO1hg6M9hTPAaZMfq8OZNN6flT02kf.jpg"
+              alt="5-Barrel Precision Flex Hinges" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <h3>5-Barrel Flex Hinges</h3>
+          <p>
+            Precision-machined stainless steel joints with Teflon-locking screws engineered to maintain crisp,
+            calibrated temple resistance indefinitely.
+          </p>
+        </div>
+
+        <!-- Pillar 04 -->
+        <div class="craft-pillar-card">
+          <span class="craft-num">04</span>
+          <div class="mb-3 rounded overflow-hidden" style="height: 120px; background-color: var(--bg-tertiary);">
+            <img
+              src="assets/images/plxJvrAF_zlzKN3Q6ZY2d_jZrW1QMI0mx9xBcVhZ4PRWdL0hBpBhJbXN_fFjpIu65bsLscIBjsFaB3UVAixyOzwQ-xOKUI6PoaOuaOJYmaE_NfR8kPLa95QZBQVA9la-fvyog1QR3ySr-ZPVGTxwqBrHtQezrfDr7JMCEToG-.jpg"
+              alt="Bespoke Presentation Box" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <h3>Bespoke Presentation</h3>
+          <p>
+            Delivered in a hard-shell textured leather case, velvet-touch microfiber cleaning cloth, and a
+            serial-numbered certificate of authenticity.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 6: PRIVATE CLIENT CONCIERGE & VIP INVITATION
+       ========================================================================== -->
+  <section class="vip-concierge-section">
+    <div class="luxe-container">
+      <div class="vip-concierge-inner text-center position-relative overflow-hidden">
+
+        <div class="row align-items-center g-4 my-2">
+          <div class="col-lg-7 text-lg-start">
+            <span class="section-eyebrow text-gold" style="color: var(--accent-gold); padding-left: 0;">PRIVATE CLIENT
+              SERVICES</span>
+            <h2 class="h1-editorial text-white mb-3">YOUR PRIVATE STYLING CONSULTATION</h2>
+            <p class="mb-4" style="color: #D5D2CA; font-weight: 300; font-size: 1.05rem; line-height: 1.6;">
+              Whether coordinating bespoke corporate gifting, selecting frame silhouettes tailored to facial geometry,
+              or reserving private salon styling, our dedicated luxury concierges await your instruction.
+            </p>
+
+            <div class="d-flex flex-wrap gap-3">
+              <a href="contact.html" class="btn-luxe btn-luxe-gold">
+                <i class="bi bi-calendar2-check"></i>
+                <span>BOOK STYLING SESSION</span>
+              </a>
+              <a href="products.html" class="btn-luxe btn-luxe-secondary"
+                style="border-color: rgba(247, 245, 240, 0.4); color: #F7F5F0;">
+                <span>EXPLORE FULL STORE</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-5">
+            <div class="rounded-2 overflow-hidden border border-secondary shadow-lg" style="aspect-ratio: 16/10;">
+              <img
+                src="assets/images/1xZ93dwdbeW4jYpLtTCV10HDCvyCqh0c1i3EpszsurTbykBrNQPqGqapxxBEfJd5cNEdeYavB1y3fD4B0ky9nqVig_tj9jLpSBxaG1Ybzi7LlKAGiDFxgbQ9dzKsTz5Aa-EhEcxRY71mJ1CpmM2dZLBkORH8nVHvet4jUqsvV.jpg"
+                alt="LUXE VISION Flagship Showroom Experience" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-4 pt-3 border-top" style="border-color: rgba(198, 167, 106, 0.2) !important;">
+          <span class="small text-muted" style="letter-spacing: 0.12em; font-size: 0.72rem; text-transform: uppercase;">
+            LUXE VISION FLAGSHIP BOUTIQUE • 104 HERITAGE BOULEVARD • CONCIERGE: +91 (80) 4567 8900
+          </span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="luxe-container">
+      <div class="footer-top-grid">
+
+        <!-- Brand Info Col -->
+        <div class="footer-brand-col">
+          <a href="index.html" class="luxe-logo">
+            <div class="logo-monogram">
+              <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="22" cy="22" r="21" stroke="#C6A76A" stroke-width="1.2" />
+                <path d="M12 14V30H22" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M22 14L28 30L34 14" stroke="#C6A76A" stroke-width="1.8" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <circle cx="16" cy="22" r="2.5" stroke="#C6A76A" stroke-width="1" />
+                <circle cx="30" cy="22" r="2.5" stroke="#FFFFFF" stroke-width="1" />
+                <path d="M18.5 22H27.5" stroke="#C6A76A" stroke-width="1" stroke-dasharray="1 1" />
+              </svg>
+            </div>
+            <div class="logo-text">
+              <span class="logo-title text-white">LUXE VISION</span>
+              <span class="logo-subline">HAUTE EYEWEAR</span>
+            </div>
+          </a>
+
+          <div class="footer-tagline">SEE THE WORLD DIFFERENTLY.</div>
+          <p class="small text-muted" style="max-width: 380px;">
+            Where timeless style meets modern expression. Curating premier sunglasses and fine accessories for
+            international connoisseurs.
+          </p>
+
+          <div class="newsletter-form-box">
+            <div class="small text-uppercase mb-2"
+              style="font-size: 0.72rem; letter-spacing: 0.14em; color: var(--accent-gold);">
+              JOIN THE PRIVATE EDIT
+            </div>
+            <form class="newsletter-form">
+              <div class="newsletter-input-group">
+                <input type="email" class="newsletter-input" placeholder="Your email address" required
+                  aria-label="Email address for newsletter">
+                <button type="submit" class="newsletter-submit-btn" aria-label="Subscribe">
+                  <i class="bi bi-arrow-right"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="footer-col-title">QUICK LINKS</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html" class="footer-link">Home (Classic)</a></li>
+            <li><a href="home2.html" class="footer-link">Home 2 (Editorial)</a></li>
+            <li><a href="products.html" class="footer-link">Products</a></li>
+            <li><a href="brands.html" class="footer-link">Brands</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Shop Categories -->
+        <div>
+          <h4 class="footer-col-title">SHOP CATEGORIES</h4>
+          <ul class="footer-links-list">
+            <li><a href="products.html?category=sunglasses" class="footer-link">Sunglasses</a></li>
+            <li><a href="products.html?category=watches" class="footer-link">Watches</a></li>
+            <li><a href="products.html?category=belts" class="footer-link">Belts</a></li>
+            <li><a href="products.html?category=caps" class="footer-link">Caps</a></li>
+          </ul>
+        </div>
+
+        <!-- Customer Care -->
+        <div>
+          <h4 class="footer-col-title">CUSTOMER CARE</h4>
+          <ul class="footer-links-list">
+            <li><a href="contact.html" class="footer-link">Contact Us</a></li>
+            <li><a href="contact.html#store-info" class="footer-link">Store Information</a></li>
+            <li><a href="javascript:void(0)" class="footer-link open-bag-btn">Shopping Bag</a></li>
+            <li><a href="javascript:void(0)" class="footer-link open-wishlist-btn">Wishlist</a></li>
+          </ul>
+
+          <div class="mt-4">
+            <h4 class="footer-col-title" style="margin-bottom: 0.8rem;">FOLLOW US</h4>
+            <div class="footer-social-row">
+              <a href="#" class="social-icon-circle" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="social-icon-circle" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="social-icon-circle" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+              <a href="#" class="social-icon-circle" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div>
+          &copy; 2026 LUXE VISION. All rights reserved. Premium Sunglasses & Fashion Accessories.
+        </div>
+        <div>
+          Designed for Luxury Fashion Editorial Commerce.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       SIDE DRAWERS, MODALS & GLOBAL OVERLAYS
+       ========================================================================== -->
+
+  <div class="backdrop-overlay" id="backdropOverlay"></div>
+
+  <!-- Shopping Bag Side Drawer -->
+  <aside class="side-drawer" id="bagDrawer" aria-label="Shopping Bag">
+    <div class="drawer-header">
+      <h3 class="font-heading">Shopping Bag</h3>
+      <button class="drawer-close-btn close-bag-btn" aria-label="Close bag">
+        <i class="bi bi-x-lg"></i>
+      </button>
+    </div>
+    <div class="drawer-body" id="bagDrawerBody"></div>
+    <div class="drawer-footer" id="bagDrawerFooter">
+      <div class="drawer-summary-row">
+        <span>Subtotal</span>
+        <span id="bagSubtotal">₹0</span>
+      </div>
+      <div class="drawer-summary-row small text-muted">
+        <span>Shipping & Insurance</span>
+        <span class="text-success">Complimentary</span>
+      </div>
+      <div class="drawer-summary-row drawer-summary-total">
+        <span>Estimated Total</span>
+        <span id="bagTotal">₹0</span>
+      </div>
+      <button class="btn-luxe btn-luxe-primary w-100 mt-3"
+        onclick="showToast('Frontend Demo Experience: Checkout not connected to live payments.', 'bi-info-circle')">
+        PROCEED TO CHECKOUT
+      </button>
+      <div class="demo-notice">
+        Demo store experience • No real payment processed
+      </div>
+    </div>
+  </aside>
+
+  <!-- Wishlist Side Drawer -->
+  <aside class="side-drawer" id="wishlistDrawer" aria-label="Wishlist">
+    <div class="drawer-header">
+      <h3 class="font-heading">My Wishlist</h3>
+      <button class="drawer-close-btn close-wishlist-btn" aria-label="Close wishlist">
+        <i class="bi bi-x-lg"></i>
+      </button>
+    </div>
+    <div class="drawer-body" id="wishlistDrawerBody"></div>
+  </aside>
+
+  <!-- Search Overlay -->
+  <div class="search-overlay" id="searchOverlay" aria-label="Search Overlay">
+    <div class="search-overlay-inner">
+      <div class="search-overlay-header">
+        <button class="search-close-btn" aria-label="Close search">
+          <i class="bi bi-x-lg"></i>
+        </button>
+      </div>
+      <div class="search-input-large-wrap">
+        <i class="bi bi-search search-input-large-icon"></i>
+        <input type="text" id="searchLargeInput" class="search-input-large"
+          placeholder="Search by name, category, or brand..." autocomplete="off">
+      </div>
+      <div class="search-live-results" id="searchLiveResults"></div>
+    </div>
+  </div>
+
+  <!-- Quick View Modal -->
+  <div class="modal fade" id="quickViewModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered quick-view-dialog">
+      <div class="modal-content modal-content-luxe">
+        <button type="button" class="modal-close-luxe" data-bs-dismiss="modal" aria-label="Close">
+          <i class="bi bi-x-lg"></i>
+        </button>
+        <div class="quickview-grid">
+          <div class="quickview-img-wrap">
+            <img id="qvImage" src="" alt="Product preview">
+          </div>
+          <div class="quickview-details">
+            <div id="qvBrand" class="quickview-brand">LUXE VISION</div>
+            <h3 id="qvTitle" class="quickview-title">Product Name</h3>
+            <div class="quickview-prices">
+              <span id="qvPrice" class="quickview-price-main">₹0</span>
+              <span id="qvPriceOrig" class="quickview-price-orig">₹0</span>
+            </div>
+            <p id="qvDescription" class="quickview-desc">Product description...</p>
+            <ul id="qvSpecs" class="quickview-specs"></ul>
+            <div class="quickview-actions">
+              <div class="drawer-qty-controls" style="height: 44px;">
+                <button class="drawer-qty-btn"
+                  onclick="const input = document.getElementById('qvQtyInput'); if(Number(input.value) > 1) input.value = Number(input.value) - 1;">-</button>
+                <input type="text" id="qvQtyInput" value="1" readonly class="text-center border-0 bg-transparent"
+                  style="width: 36px; font-weight: 600; color: inherit;">
+                <button class="drawer-qty-btn"
+                  onclick="const input = document.getElementById('qvQtyInput'); input.value = Number(input.value) + 1;">+</button>
+              </div>
+              <button id="qvAddBtn" class="btn-luxe btn-luxe-primary flex-grow-1" style="height: 44px;">
+                <i class="bi bi-bag-plus"></i> ADD TO BAG
+              </button>
+              <button id="qvWishlistBtn" class="card-action-btn" style="width: 44px; height: 44px; border-radius: 4px;"
+                aria-label="Save to Wishlist">
+                <i class="bi bi-heart"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Container -->
+  <div class="toast-container-luxe" id="toastContainer"></div>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top-btn" id="backToTopBtn" aria-label="Back to top" title="Scroll to top">
+    <i class="bi bi-chevron-up"></i>
+  </button>
+
+  <!-- Bootstrap 5 Bundle JS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Main Script -->
+  <script src="assets/js/main.js"></script>
+
+  <!-- Render Home 2 Signature Selection Grid -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const container = document.getElementById("home2ProductsGrid");
+      if (container && typeof LUXE_PRODUCTS !== "undefined") {
+        // Select 6 premier pieces across categories for Home 2's vault highlights
+        const selectedIds = [2, 3, 9, 15, 18, 19];
+        const vaultPieces = selectedIds.map(id => LUXE_PRODUCTS.find(p => p.id === id)).filter(Boolean);
+
+        container.innerHTML = vaultPieces.map(product => `
+          <div class="col-12 col-sm-6 col-lg-4">
+            ${createProductCardHTML(product)}
+          </div>
+        `).join("");
+      }
+    });
+  </script>
+</body>
+
+</html>

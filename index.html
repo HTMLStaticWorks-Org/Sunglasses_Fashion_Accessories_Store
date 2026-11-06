@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luxe Vision | Premium Sunglasses & Fashion Accessories</title>
+  <meta name="description" content="Discover premium sunglasses, luxury watches, handcrafted leather belts, and designer caps at LUXE VISION. Timeless style meets modern expression.">
+  
+  <!-- Open Graph Metadata -->
+  <meta property="og:title" content="Luxe Vision | Premium Sunglasses & Fashion Accessories">
+  <meta property="og:description" content="Where timeless style meets modern expression. Shop curated luxury eyewear, watches, belts, and caps.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1509695507497-903c140c43b0?auto=format&fit=crop&w=1200&q=80">
+
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       GLOBAL NAVIGATION BAR
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="luxe-container">
+      <div class="nav-inner">
+        
+        <!-- Brand Logo -->
+        <a href="index.html" class="luxe-logo" aria-label="LUXE VISION Homepage">
+          <div class="logo-monogram">
+            <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="22" cy="22" r="21" stroke="#C6A76A" stroke-width="1.2"/>
+              <path d="M12 14V30H22" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M22 14L28 30L34 14" stroke="#C6A76A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="16" cy="22" r="2.5" stroke="#C6A76A" stroke-width="1"/>
+              <circle cx="30" cy="22" r="2.5" stroke="currentColor" stroke-width="1"/>
+              <path d="M18.5 22H27.5" stroke="#C6A76A" stroke-width="1" stroke-dasharray="1 1"/>
+            </svg>
+          </div>
+          <div class="logo-text">
+            <span class="logo-title">LUXE VISION</span>
+            <span class="logo-subline">HAUTE EYEWEAR</span>
+          </div>
+        </a>
+
+        <!-- Center Navigation Links -->
+        <nav aria-label="Primary Navigation">
+          <ul class="nav-links">
+            <li><a href="index.html" class="nav-link-item active">Home</a></li>
+            <li><a href="home-2.html" class="nav-link-item">Home 2</a></li>
+            <li><a href="products.html" class="nav-link-item">Products</a></li>
+            <li><a href="brands.html" class="nav-link-item">Brands</a></li>
+            <li><a href="contact.html" class="nav-link-item">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Right Action Icons & CTA -->
+        <div class="nav-actions">
+          <!-- Search Icon Button -->
+          <button class="nav-icon-btn open-search-btn" aria-label="Open Search" title="Search catalog">
+            <i class="bi bi-search"></i>
+          </button>
+
+          <!-- Wishlist Icon Button -->
+          <button class="nav-icon-btn open-wishlist-btn" aria-label="Open Wishlist" title="View Wishlist">
+            <i class="bi bi-heart"></i>
+            <span class="nav-badge wishlist-badge-count" style="display: none;">0</span>
+          </button>
+
+          <!-- Shopping Bag Icon Button -->
+          <button class="nav-icon-btn open-bag-btn" aria-label="Open Shopping Bag" title="View Shopping Bag">
+            <i class="bi bi-bag"></i>
+            <span class="nav-badge bag-badge-count" style="display: none;">0</span>
+          </button>
+
+          <!-- Theme Toggle Button -->
+          <button class="nav-icon-btn theme-toggle-btn" aria-label="Toggle Theme" title="Toggle Light/Dark Theme">
+            <i class="bi bi-moon-stars"></i>
+          </button>
+
+          <!-- RTL Direction Toggle Button -->
+          <button class="nav-icon-btn rtl-toggle-btn" aria-label="Toggle RTL/LTR" title="Switch to RTL">
+            <span class="rtl-text">RTL</span>
+          </button>
+
+          <!-- Desktop CTA -->
+          <a href="products.html" class="btn-luxe btn-luxe-primary btn-luxe-sm nav-cta">Shop Now</a>
+
+          <!-- Mobile Hamburger -->
+          <button class="nav-hamburger-btn" aria-label="Toggle Mobile Menu" title="Menu">
+            <i class="bi bi-list"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       MOBILE OFF-CANVAS DRAWER
+       ========================================================================== -->
+  <aside class="mobile-nav-drawer" id="mobileNavDrawer" aria-label="Mobile Navigation">
+    <div class="mobile-nav-header">
+      <div class="luxe-logo">
+        <div class="logo-monogram">
+          <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="22" cy="22" r="21" stroke="#C6A76A" stroke-width="1.2"/>
+            <path d="M12 14V30H22" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M22 14L28 30L34 14" stroke="#C6A76A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="16" cy="22" r="2.5" stroke="#C6A76A" stroke-width="1"/>
+            <circle cx="30" cy="22" r="2.5" stroke="currentColor" stroke-width="1"/>
+            <path d="M18.5 22H27.5" stroke="#C6A76A" stroke-width="1" stroke-dasharray="1 1"/>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="logo-title">LUXE VISION</span>
+          <span class="logo-subline">HAUTE EYEWEAR</span>
+        </div>
+      </div>
+      <button class="mobile-nav-close" aria-label="Close Mobile Menu">
+        <i class="bi bi-x-lg"></i>
+      </button>
+    </div>
+
+    <ul class="mobile-nav-list">
+      <li><a href="index.html" class="mobile-nav-link active">Home (Classic)</a></li>
+      <li><a href="home-2.html" class="mobile-nav-link">Home 2 (Editorial)</a></li>
+      <li><a href="products.html" class="mobile-nav-link">Products</a></li>
+      <li><a href="brands.html" class="mobile-nav-link">Brands</a></li>
+      <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+    </ul>
+
+    <div class="mobile-nav-footer">
+      <div class="mobile-nav-actions">
+        <button class="nav-icon-btn open-search-btn" aria-label="Search">
+          <i class="bi bi-search"></i>
+        </button>
+        <button class="nav-icon-btn open-wishlist-btn" aria-label="Wishlist">
+          <i class="bi bi-heart"></i>
+          <span class="nav-badge wishlist-badge-count" style="display: none;">0</span>
+        </button>
+        <button class="nav-icon-btn open-bag-btn" aria-label="Bag">
+          <i class="bi bi-bag"></i>
+          <span class="nav-badge bag-badge-count" style="display: none;">0</span>
+        </button>
+        <button class="nav-icon-btn theme-toggle-btn" aria-label="Theme">
+          <i class="bi bi-moon-stars"></i>
+        </button>
+        <button class="nav-icon-btn rtl-toggle-btn" aria-label="Toggle RTL/LTR" title="Switch to RTL">
+          <span class="rtl-text">RTL</span>
+        </button>
+      </div>
+      <a href="products.html" class="btn-luxe btn-luxe-primary w-100 text-center">Shop The Collection</a>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       SECTION 1: PREMIUM HERO
+       ========================================================================== -->
+  <section class="hero-editorial" id="hero">
+    <div class="luxe-container">
+      <div class="hero-grid">
+        
+        <!-- Left Content -->
+        <div class="hero-content-col">
+          <div class="hero-editorial-tags">
+            <span class="hero-tag">PREMIUM EYEWEAR</span>
+            <span class="hero-tag">MODERN ESSENTIALS</span>
+            <span class="hero-tag">TIMELESS STYLE</span>
+          </div>
+
+          <h1 class="hero-title">DEFINE YOUR LOOK.<br><span class="font-editorial">OWN YOUR STYLE.</span></h1>
+          
+          <p class="hero-lead">
+            Discover premium sunglasses and carefully selected fashion accessories designed to make every moment more stylish.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="products.html" class="btn-luxe btn-luxe-primary">
+              <span>EXPLORE COLLECTION</span>
+              <i class="bi bi-arrow-right"></i>
+            </a>
+            <a href="#new-arrivals" class="btn-luxe btn-luxe-secondary">
+              <span>DISCOVER NEW ARRIVALS</span>
+            </a>
+          </div>
+
+          <div class="row g-4 mt-4 pt-3 border-top" style="border-color: var(--border-subtle) !important;">
+            <div class="col-4">
+              <div class="h4 mb-0 fw-bold font-heading text-primary">100%</div>
+              <div class="small text-muted" style="font-size: 0.75rem; letter-spacing: 0.05em;">UV400 POLARIZED</div>
+            </div>
+            <div class="col-4">
+              <div class="h4 mb-0 fw-bold font-heading text-primary">Handcrafted</div>
+              <div class="small text-muted" style="font-size: 0.75rem; letter-spacing: 0.05em;">ITALIAN ACETATE</div>
+            </div>
+            <div class="col-4">
+              <div class="h4 mb-0 fw-bold font-heading text-primary">Curated</div>
+              <div class="small text-muted" style="font-size: 0.75rem; letter-spacing: 0.05em;">GLOBAL HOUSES</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Visual Composition -->
+        <div class="hero-image-composition">
+          <div class="hero-main-img-card">
+            <img src="assets/images/vziIryqeUhm8qHOj1qInW8_mgiSLAsDDQuP8byQXFkylfl3nIh2A5ytBRZn-hPaaPNkMMjlHSjhDIkFAYXXEaw4vwRzPBwgF866dXv8QInyUwziB2poOtkr_3c7_PA0597tWWUkRJAowG2Ahtt6prRbo-AJnUPq_XaYl3kFQH.jpg" 
+                 alt="High fashion model wearing luxury designer gold aviator sunglasses" 
+                 loading="eager">
+          </div>
+
+          <div class="hero-badge-floating">
+            <div class="badge-gold-accent">HAUTE CURATION</div>
+            <div class="badge-text">Where timeless style meets modern expression.</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 2: NEW ARRIVALS
+       ========================================================================== -->
+  <section class="section-spacer" id="new-arrivals">
+    <div class="luxe-container">
+      
+      <div class="section-header text-center">
+        <span class="section-eyebrow">SPRING / SUMMER EDIT</span>
+        <h2 class="h2-editorial">THE LATEST IN LUXURY.</h2>
+        <p class="section-subtitle">
+          Explore the latest styles and discover accessories that complete your everyday look.
+        </p>
+      </div>
+
+      <!-- 6 Featured Products Grid -->
+      <div class="row g-4" id="newArrivalsGrid">
+        <!-- Rendered dynamically via inline JS to guarantee full functionality -->
+      </div>
+
+      <div class="text-center mt-5">
+        <a href="products.html" class="btn-luxe btn-luxe-secondary">
+          <span>VIEW COMPLETE CATALOG</span>
+          <i class="bi bi-arrow-right"></i>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 3: SHOP BY CATEGORY
+       ========================================================================== -->
+  <section class="section-spacer" style="background-color: var(--bg-secondary);">
+    <div class="luxe-container">
+      
+      <div class="section-header">
+        <span class="section-eyebrow">ESSENTIAL WARDROBE</span>
+        <h2 class="h2-editorial">FIND YOUR SIGNATURE STYLE.</h2>
+        <p class="section-subtitle">
+          Four distinct categories crafted for discerning connoisseurs of modern luxury fashion.
+        </p>
+      </div>
+
+      <div class="category-editorial-grid">
+        
+        <!-- Category 1: Sunglasses -->
+        <a href="products.html?category=sunglasses" class="category-block">
+          <div class="category-block-bg">
+            <img src="assets/images/V2XZN1ySH9K8ah1tJ5LrnXibHfy0FxmxUYJhRfbXDeQBrzUIBsbNi3o6SC2YkF7Foi70jN8KAuQlCVzZYIb-sSd8r14hKYQhbJcpBKedi-GmKOSE378wfZiAePXkPbP30lbBG8U4jzbreAa0irhJ3mcKJ5r1ji2RpA7W9qr2b.jpg" alt="Sunglasses Collection">
+          </div>
+          <div class="category-block-overlay"></div>
+          <div class="category-block-content">
+            <div class="category-tag">CATEGORY 01</div>
+            <h3 class="category-name">SUNGLASSES</h3>
+            <p class="category-desc">Stylish eyewear for every occasion.</p>
+            <span class="category-link-arrow">
+              <span>EXPLORE CATEGORY</span>
+              <i class="bi bi-arrow-right"></i>
+            </span>
+          </div>
+        </a>
+
+        <!-- Category 2: Watches -->
+        <a href="products.html?category=watches" class="category-block">
+          <div class="category-block-bg">
+            <img src="assets/images/uCfnhDpR8oLpxtIRxLnRSZEJdpVBM2qplHKuWSqTTeBhe7iigPcNSFe1oNDF6GHM9uNw8FsHTozJnX8SsEo-0Md93rc8o7IDKX2v3aPDr6l040XaBlBZ0Hm9rgCXS7uizZh2NzTEeJLPmrSSdsjdMnrG4wWtW3SXme0-YngxJ.jpg" alt="Watches Collection">
+          </div>
+          <div class="category-block-overlay"></div>
+          <div class="category-block-content">
+            <div class="category-tag">CATEGORY 02</div>
+            <h3 class="category-name">WATCHES</h3>
+            <p class="category-desc">Timeless details for modern living.</p>
+            <span class="category-link-arrow">
+              <span>EXPLORE CATEGORY</span>
+              <i class="bi bi-arrow-right"></i>
+            </span>
+          </div>
+        </a>
+
+        <!-- Category 3: Belts -->
+        <a href="products.html?category=belts" class="category-block">
+          <div class="category-block-bg">
+            <img src="assets/images/-fdlUbPXs6oBS4I7fDoPCThmptMwCRzw0uzk2lkhO8Ix5b0nOBV9o3lWv_a-MeHaE6eMn0_4xkMxsVPYayUsusJpSM1OvhzgseLiavTJ7zCaAzcZhdbN84179F5ENkx1jz209EdRHeBXLBgXcB49AF0Snxnd5muFJKjOZNqah.jpg" alt="Belts Collection">
+          </div>
+          <div class="category-block-overlay"></div>
+          <div class="category-block-content">
+            <div class="category-tag">CATEGORY 03</div>
+            <h3 class="category-name">BELTS</h3>
+            <p class="category-desc">Refined essentials that complete your outfit.</p>
+            <span class="category-link-arrow">
+              <span>EXPLORE CATEGORY</span>
+              <i class="bi bi-arrow-right"></i>
+            </span>
+          </div>
+        </a>
+
+        <!-- Category 4: Caps -->
+        <a href="products.html?category=caps" class="category-block">
+          <div class="category-block-bg">
+            <img src="assets/images/Cin7d3YSK5_ca4l0H4hPbB6mGNgRnuj1LwvDIinLVFOR_4DpKw0wU9E-1-ZziuaVY6MnQzKOWzzDwl_MCSCpm1aIu5kq0n3nXf0Yg5KPL3JU9PC-A4SWCvP-5lgkQB4cPm5JNatNxnRKQGaMdC7mwbXAkHjqoHzQuPpyi23xv.jpg" alt="Caps Collection">
+          </div>
+          <div class="category-block-overlay"></div>
+          <div class="category-block-content">
+            <div class="category-tag">CATEGORY 04</div>
+            <h3 class="category-name">CAPS</h3>
+            <p class="category-desc">Everyday streetwear with a premium edge.</p>
+            <span class="category-link-arrow">
+              <span>EXPLORE CATEGORY</span>
+              <i class="bi bi-arrow-right"></i>
+            </span>
+          </div>
+        </a>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 4: FEATURED COLLECTION
+       ========================================================================== -->
+  <section class="section-spacer featured-collection-section">
+    <div class="luxe-container">
+      
+      <div class="editorial-asymmetric-grid">
+        
+        <!-- Story text -->
+        <div class="editorial-story">
+          <span class="section-eyebrow">EDITORIAL SPOTLIGHT</span>
+          <h2 class="h2-editorial mb-4">STYLE THAT SPEAKS WITHOUT WORDS.</h2>
+          <p>
+            Eyewear is the first element people notice—a definitive signature of your confidence and aesthetic intellect. Our featured collection bridges archival silhouettes with avant-garde engineering.
+          </p>
+          <p>
+            From handcrafted Italian acetate polished for seventy-two hours to micro-engineered titanium wireframes, each piece delivers unparalleled clarity, certified UV400 filtration, and an uncompromising silhouette.
+          </p>
+          
+          <div class="row g-3 my-4">
+            <div class="col-6">
+              <div class="p-3 border rounded-1" style="border-color: var(--border-main) !important; background-color: var(--surface-card);">
+                <div class="fw-bold text-primary mb-1">Men’s & Women’s</div>
+                <div class="small text-muted">Architectural and delicate profiles tailored for all proportions.</div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="p-3 border rounded-1" style="border-color: var(--border-main) !important; background-color: var(--surface-card);">
+                <div class="fw-bold text-primary mb-1">Unisex & Oversized</div>
+                <div class="small text-muted">Bold geometry designed to transcend traditional boundaries.</div>
+              </div>
+            </div>
+          </div>
+
+          <a href="products.html?category=sunglasses" class="btn-luxe btn-luxe-primary">
+            <span>EXPLORE SUNGLASSES</span>
+            <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+
+        <!-- Asymmetric Mosaic Images -->
+        <div class="editorial-mosaic">
+          <div class="mosaic-item">
+            <img src="assets/images/XowgdSgbjvZ_kZueKyug6JB1dtHdcZFIC5of1FOG5yYWe2aQJlDBrD6w9-uDuibSaO8nDmz_iN9kMjlCRUY5YgdhI_PbZJ9VPJb8twWmOGZqXtubTq1sLpEEbfeYJsbe1B1hh6jjMEih27jVUes-eUuzUbycEoC8Bfpl4LLKq.jpg" alt="Men's architectural eyewear">
+            <div class="mosaic-caption">MEN’S ARCHITECTURAL</div>
+          </div>
+          <div class="mosaic-item">
+            <img src="assets/images/tdcaOAXi9R_C1GlKuCkXDedynZd8Po-iW_DV9ZDhUpOb9daBY3AChnOoqlScbIqxrV31a-NXxEDve2dae3crMiZvptbl5bUXLvun9UdQGo2e6kcimJufNbgzoK9IY9MfpRaM-k7GsNRi_VkYbSBy6ZHhTcIERfCR-RQvPZ61f.jpg" alt="Women's cat eye silhouette">
+            <div class="mosaic-caption">WOMEN’S CAT-EYE</div>
+          </div>
+          <div class="mosaic-item">
+            <img src="assets/images/7NPaxuciBjnqcFb5EqG0Wc92nb2KhGSBEBObR7nuU43aIda8tBQHX3xUJPyPVXQJ4jeiJT2krPw93240-8ZB2It1diMvhTFHXVch9sDsI8SNpA35XfxsZIir0vzZXy-ggzGPFOh29BNGO1hg6M9hTPAaZMfq8OZNN6flT02kf.jpg" alt="Unisex vintage rounds">
+            <div class="mosaic-caption">UNISEX GOLD ROUNDS</div>
+          </div>
+          <div class="mosaic-item">
+            <img src="assets/images/UKC_eoQDdVyn1cklhMO-J_Hg62GL_V6OI7j4rDFio63IRbasOKCo4RCYifG2CFy0Uwp4EgSjA22kbpeGIntEXY7FIEqzT-5A0SRn13KjZQ_6v5Q6PFRfubhrLnmPTq9Y8Cznz0i9o_usc3qQRGgfeVZuXs33s7Uan-tXAIuTi.jpg" alt="Modern oversized sunglasses">
+            <div class="mosaic-caption">OVERSIZED AVIATORS</div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 5: THE ACCESSORY EDIT
+       ========================================================================== -->
+  <section class="section-spacer">
+    <div class="luxe-container">
+      
+      <div class="section-header text-center">
+        <span class="section-eyebrow">CURATED COMPLEMENTS</span>
+        <h2 class="h2-editorial">THE DETAILS MAKE THE DIFFERENCE.</h2>
+        <p class="section-subtitle">
+          True luxury resides in the quiet harmony of high-end accessories. Discover watches, belts, and caps created with master precision.
+        </p>
+      </div>
+
+      <div class="accessory-cards-grid">
+        
+        <!-- Card 1: Watches -->
+        <div class="accessory-card">
+          <div class="accessory-card-img">
+            <img src="assets/images/IhZFCfjoqGIL3hPbKy_M9b97VoG0JcB9snSR-2_7ZQjLoV39WPeWIFZL_ERz6gCaZ07wrLc3JqYss9KWN2-fSYI89Q0THGWgmEgGp_xE1jbLRuVvJSiYeGdXHHXu5h7ogGLyGD0gDdaDA6HGYje3xPD7ehzC_MHQZkoG2URjy.jpg" alt="Premium Timepieces">
+          </div>
+          <div class="accessory-card-body">
+            <span class="text-uppercase small fw-bold" style="color: var(--accent-gold); letter-spacing: 0.15em;">PRECISION TIMEPIECES</span>
+            <h3 class="my-2">Chronograph & Minimal Watches</h3>
+            <p class="small text-muted mb-4">
+              Equipped with surgical 316L steel, scratch-resistant sapphire mineral glass, and Italian leather straps designed for timeless everyday wrist presence.
+            </p>
+            <a href="products.html?category=watches" class="btn-text-link">
+              <span>VIEW WATCHES</span>
+              <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 2: Belts -->
+        <div class="accessory-card">
+          <div class="accessory-card-img">
+            <img src="assets/images/ifLdAmkfVHTYc4_Qi3mCObSnVYuggS_G5VCT1mdf0hkuigmJohZRkNuEvOsoc1zhZ6fEWhMjFEop5AcKa-932ecOmLbs899rDq-pgkvMulg_OMeFDAcJyQmdxwyeEak5fdpt3JqvFMrkGIaGPg33QjsSLciCx-H0PBibRXYSi.jpg" alt="Handcrafted Belts">
+          </div>
+          <div class="accessory-card-body">
+            <span class="text-uppercase small fw-bold" style="color: var(--accent-gold); letter-spacing: 0.15em;">ARTISANAL LEATHER</span>
+            <h3 class="my-2">Signature & Reversible Belts</h3>
+            <p class="small text-muted mb-4">
+              Hand-finished vegetable-tanned full-grain leathers adorned with bespoke Champagne Gold and brushed gunmetal hardware closures.
+            </p>
+            <a href="products.html?category=belts" class="btn-text-link">
+              <span>VIEW BELTS</span>
+              <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 3: Caps -->
+        <div class="accessory-card">
+          <div class="accessory-card-img">
+            <img src="assets/images/Vb-T75htgJCyShDnQoSnzcndaJH4CKhSPjOClivTqAoA9HpR-B3VB4JsOShQUQjLZliCnsANoLgZA_X11CdZKFt3BaCCOKklw5NGLA_6IUdjCMQZ9TlYj0DLGbOF39uJtKW36vZ41zUqqw1mo-5mkP0lsQzAK0_KtATUMMYoV.jpg" alt="Designer Streetwear Caps">
+          </div>
+          <div class="accessory-card-body">
+            <span class="text-uppercase small fw-bold" style="color: var(--accent-gold); letter-spacing: 0.15em;">URBAN REFINEMENT</span>
+            <h3 class="my-2">Minimalist Streetwear Caps</h3>
+            <p class="small text-muted mb-4">
+              Heavy organic cotton twill structured with ergonomic 6-panel crowns, brass adjuster buckles, and understated tactile 3D emblems.
+            </p>
+            <a href="products.html?category=caps" class="btn-text-link">
+              <span>VIEW CAPS</span>
+              <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="text-center mt-5">
+        <a href="products.html" class="btn-luxe btn-luxe-primary">
+          <span>SHOP ACCESSORIES</span>
+          <i class="bi bi-arrow-right"></i>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 6: BRAND EXPERIENCE
+       ========================================================================== -->
+  <section class="section-spacer" style="background-color: var(--bg-secondary);">
+    <div class="luxe-container">
+      
+      <div class="section-header text-center">
+        <span class="section-eyebrow">WORLD-CLASS HOUSES</span>
+        <h2 class="h2-editorial">CURATED FOR THE STYLE-CONSCIOUS.</h2>
+        <p class="section-subtitle">
+          Explore iconic collections from internationally celebrated fashion houses, each represented in our curated seasonal selection.
+        </p>
+      </div>
+
+      <div class="brands-row">
+        <!-- Brand 1: Ray-Ban -->
+        <a href="products.html?brand=Ray-Ban" class="brand-badge-item">
+          <div class="brand-name">Ray-Ban</div>
+          <div class="brand-sub">ICONIC EYEWEAR</div>
+        </a>
+
+        <!-- Brand 2: Oakley -->
+        <a href="products.html?brand=Oakley" class="brand-badge-item">
+          <div class="brand-name">Oakley</div>
+          <div class="brand-sub">HIGH PERFORMANCE</div>
+        </a>
+
+        <!-- Brand 3: Vogue Eyewear -->
+        <a href="products.html?brand=Vogue%20Eyewear" class="brand-badge-item">
+          <div class="brand-name">Vogue</div>
+          <div class="brand-sub">FASHION FORWARD</div>
+        </a>
+
+        <!-- Brand 4: Fossil -->
+        <a href="products.html?brand=Fossil" class="brand-badge-item">
+          <div class="brand-name">Fossil</div>
+          <div class="brand-sub">TIMEPIECES & LEATHER</div>
+        </a>
+
+        <!-- Brand 5: Casio -->
+        <a href="products.html?brand=Casio" class="brand-badge-item">
+          <div class="brand-name">Casio</div>
+          <div class="brand-sub">PRECISION CRAFT</div>
+        </a>
+
+        <!-- Brand 6: Tommy Hilfiger -->
+        <a href="products.html?brand=Tommy%20Hilfiger" class="brand-badge-item">
+          <div class="brand-name">Tommy Hilfiger</div>
+          <div class="brand-sub">MODERN CLASSIC</div>
+        </a>
+      </div>
+
+      <p class="disclaimer-note">
+        * Brand names are presented as representative sample catalogue content for demonstration purposes.
+      </p>
+
+      <div class="text-center mt-4">
+        <a href="brands.html" class="btn-luxe btn-luxe-secondary">
+          <span>EXPLORE ALL BRANDS</span>
+          <i class="bi bi-arrow-right"></i>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 7: FINAL CAMPAIGN CTA
+       ========================================================================== -->
+  <section class="campaign-cta-section">
+    <div class="campaign-cta-bg"></div>
+    <div class="luxe-container">
+      <div class="campaign-cta-content">
+        <span class="section-eyebrow text-gold" style="color: var(--accent-gold);">LUXE VISION CAMPAIGN</span>
+        <h2 class="h1-editorial">YOUR STYLE. YOUR STATEMENT.</h2>
+        <p>
+          Find the pieces that reflect your personality. Discover eyewear and accessories made for modern expression.
+        </p>
+        <div class="d-flex flex-wrap justify-content-center gap-3">
+          <a href="products.html" class="btn-luxe btn-luxe-gold">
+            <span>SHOP THE COLLECTION</span>
+            <i class="bi bi-bag"></i>
+          </a>
+          <a href="contact.html" class="btn-luxe btn-luxe-secondary" style="border-color: rgba(247, 245, 240, 0.4); color: #F7F5F0;">
+            <span>CONTACT OUR STORE</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="luxe-container">
+      <div class="footer-top-grid">
+        
+        <!-- Brand Info Col -->
+        <div class="footer-brand-col">
+          <a href="index.html" class="luxe-logo">
+            <div class="logo-monogram">
+              <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="22" cy="22" r="21" stroke="#C6A76A" stroke-width="1.2"/>
+                <path d="M12 14V30H22" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M22 14L28 30L34 14" stroke="#C6A76A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="16" cy="22" r="2.5" stroke="#C6A76A" stroke-width="1"/>
+                <circle cx="30" cy="22" r="2.5" stroke="#FFFFFF" stroke-width="1"/>
+                <path d="M18.5 22H27.5" stroke="#C6A76A" stroke-width="1" stroke-dasharray="1 1"/>
+              </svg>
+            </div>
+            <div class="logo-text">
+              <span class="logo-title text-white">LUXE VISION</span>
+              <span class="logo-subline">HAUTE EYEWEAR</span>
+            </div>
+          </a>
+          
+          <div class="footer-tagline">SEE THE WORLD DIFFERENTLY.</div>
+          <p class="small text-muted" style="max-width: 380px;">
+            Where timeless style meets modern expression. Curating premier sunglasses and fine accessories for international connoisseurs.
+          </p>
+
+          <!-- Newsletter Form -->
+          <div class="newsletter-form-box">
+            <div class="small text-uppercase mb-2" style="font-size: 0.72rem; letter-spacing: 0.14em; color: var(--accent-gold);">
+              JOIN THE PRIVATE EDIT
+            </div>
+            <form class="newsletter-form">
+              <div class="newsletter-input-group">
+                <input type="email" class="newsletter-input" placeholder="Your email address" required aria-label="Email address for newsletter">
+                <button type="submit" class="newsletter-submit-btn" aria-label="Subscribe">
+                  <i class="bi bi-arrow-right"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div>
+          <h4 class="footer-col-title">QUICK LINKS</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html" class="footer-link">Home (Classic)</a></li>
+            <li><a href="home-2.html" class="footer-link">Home 2 (Editorial)</a></li>
+            <li><a href="products.html" class="footer-link">Products</a></li>
+            <li><a href="brands.html" class="footer-link">Brands</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Shop Categories -->
+        <div>
+          <h4 class="footer-col-title">SHOP CATEGORIES</h4>
+          <ul class="footer-links-list">
+            <li><a href="products.html?category=sunglasses" class="footer-link">Sunglasses</a></li>
+            <li><a href="products.html?category=watches" class="footer-link">Watches</a></li>
+            <li><a href="products.html?category=belts" class="footer-link">Belts</a></li>
+            <li><a href="products.html?category=caps" class="footer-link">Caps</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Customer Support -->
+        <div>
+          <h4 class="footer-col-title">CUSTOMER CARE</h4>
+          <ul class="footer-links-list">
+            <li><a href="contact.html" class="footer-link">Contact Us</a></li>
+            <li><a href="contact.html#store-info" class="footer-link">Store Information</a></li>
+            <li><a href="javascript:void(0)" class="footer-link open-bag-btn">Shopping Bag</a></li>
+            <li><a href="javascript:void(0)" class="footer-link open-wishlist-btn">Wishlist</a></li>
+          </ul>
+
+          <div class="mt-4">
+            <h4 class="footer-col-title" style="margin-bottom: 0.8rem;">FOLLOW US</h4>
+            <div class="footer-social-row">
+              <a href="#" class="social-icon-circle" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="social-icon-circle" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="social-icon-circle" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+              <a href="#" class="social-icon-circle" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div>
+          &copy; 2026 LUXE VISION. All rights reserved. Premium Sunglasses & Fashion Accessories.
+        </div>
+        <div>
+          Designed for Luxury Fashion Editorial Commerce.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       SIDE DRAWERS, MODALS & GLOBAL OVERLAYS
+       ========================================================================== -->
+
+  <!-- Backdrop Overlay -->
+  <div class="backdrop-overlay" id="backdropOverlay"></div>
+
+  <!-- Shopping Bag Side Drawer -->
+  <aside class="side-drawer" id="bagDrawer" aria-label="Shopping Bag">
+    <div class="drawer-header">
+      <h3 class="font-heading">Shopping Bag</h3>
+      <button class="drawer-close-btn close-bag-btn" aria-label="Close bag">
+        <i class="bi bi-x-lg"></i>
+      </button>
+    </div>
+    <div class="drawer-body" id="bagDrawerBody">
+      <!-- Populated via JavaScript -->
+    </div>
+    <div class="drawer-footer" id="bagDrawerFooter">
+      <div class="drawer-summary-row">
+        <span>Subtotal</span>
+        <span id="bagSubtotal">₹0</span>
+      </div>
+      <div class="drawer-summary-row small text-muted">
+        <span>Shipping & Insurance</span>
+        <span class="text-success">Complimentary</span>
+      </div>
+      <div class="drawer-summary-row drawer-summary-total">
+        <span>Estimated Total</span>
+        <span id="bagTotal">₹0</span>
+      </div>
+      <button class="btn-luxe btn-luxe-primary w-100 mt-3" onclick="showToast('Frontend Demo Experience: Checkout not connected to live payments.', 'bi-info-circle')">
+        PROCEED TO CHECKOUT
+      </button>
+      <div class="demo-notice">
+        Demo store experience • No real payment processed
+      </div>
+    </div>
+  </aside>
+
+  <!-- Wishlist Side Drawer -->
+  <aside class="side-drawer" id="wishlistDrawer" aria-label="Wishlist">
+    <div class="drawer-header">
+      <h3 class="font-heading">My Wishlist</h3>
+      <button class="drawer-close-btn close-wishlist-btn" aria-label="Close wishlist">
+        <i class="bi bi-x-lg"></i>
+      </button>
+    </div>
+    <div class="drawer-body" id="wishlistDrawerBody">
+      <!-- Populated via JavaScript -->
+    </div>
+  </aside>
+
+  <!-- Search Overlay -->
+  <div class="search-overlay" id="searchOverlay" aria-label="Search Overlay">
+    <div class="search-overlay-inner">
+      <div class="search-overlay-header">
+        <button class="search-close-btn" aria-label="Close search">
+          <i class="bi bi-x-lg"></i>
+        </button>
+      </div>
+      <div class="search-input-large-wrap">
+        <i class="bi bi-search search-input-large-icon"></i>
+        <input type="text" id="searchLargeInput" class="search-input-large" placeholder="Search by name, category, or brand..." autocomplete="off">
+      </div>
+      <div class="search-live-results" id="searchLiveResults">
+        <!-- Live search matches populated via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Quick View Modal -->
+  <div class="modal fade" id="quickViewModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered quick-view-dialog">
+      <div class="modal-content modal-content-luxe">
+        <button type="button" class="modal-close-luxe" data-bs-dismiss="modal" aria-label="Close">
+          <i class="bi bi-x-lg"></i>
+        </button>
+        <div class="quickview-grid">
+          <div class="quickview-img-wrap">
+            <img id="qvImage" src="" alt="Product preview">
+          </div>
+          <div class="quickview-details">
+            <div id="qvBrand" class="quickview-brand">LUXE VISION</div>
+            <h3 id="qvTitle" class="quickview-title">Product Name</h3>
+            <div class="quickview-prices">
+              <span id="qvPrice" class="quickview-price-main">₹0</span>
+              <span id="qvPriceOrig" class="quickview-price-orig">₹0</span>
+            </div>
+            <p id="qvDescription" class="quickview-desc">Product description...</p>
+            <ul id="qvSpecs" class="quickview-specs">
+              <!-- Specs list -->
+            </ul>
+            <div class="quickview-actions">
+              <div class="drawer-qty-controls" style="height: 44px;">
+                <button class="drawer-qty-btn" onclick="const input = document.getElementById('qvQtyInput'); if(Number(input.value) > 1) input.value = Number(input.value) - 1;">-</button>
+                <input type="text" id="qvQtyInput" value="1" readonly class="text-center border-0 bg-transparent" style="width: 36px; font-weight: 600; color: inherit;">
+                <button class="drawer-qty-btn" onclick="const input = document.getElementById('qvQtyInput'); input.value = Number(input.value) + 1;">+</button>
+              </div>
+              <button id="qvAddBtn" class="btn-luxe btn-luxe-primary flex-grow-1" style="height: 44px;">
+                <i class="bi bi-bag-plus"></i> ADD TO BAG
+              </button>
+              <button id="qvWishlistBtn" class="card-action-btn" style="width: 44px; height: 44px; border-radius: 4px;" aria-label="Save to Wishlist">
+                <i class="bi bi-heart"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container-luxe" id="toastContainer"></div>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top-btn" id="backToTopBtn" aria-label="Back to top" title="Scroll to top">
+    <i class="bi bi-chevron-up"></i>
+  </button>
+
+  <!-- Bootstrap 5 Bundle JS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Main Script -->
+  <script src="assets/js/main.js"></script>
+
+  <!-- Script to render New Arrivals section -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const container = document.getElementById("newArrivalsGrid");
+      if (container && typeof LUXE_PRODUCTS !== "undefined") {
+        // Products 1 through 6 are the designated new arrivals
+        const newArrivals = LUXE_PRODUCTS.filter(p => p.newArrival).slice(0, 6);
+        container.innerHTML = newArrivals.map(product => `
+          <div class="col-12 col-sm-6 col-lg-4">
+            ${createProductCardHTML(product)}
+          </div>
+        `).join("");
+      }
+    });
+  </script>
+</body>
+</html>
+

@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop Sunglasses, Watches, Belts & Caps | Luxe Vision</title>
+  <meta name="description" content="Browse our luxury collection of designer sunglasses, precision watches, handcrafted leather belts, and modern streetwear caps.">
+  
+  <!-- Open Graph Metadata -->
+  <meta property="og:title" content="Shop Sunglasses, Watches, Belts & Caps | Luxe Vision">
+  <meta property="og:description" content="Discover timeless eyewear and contemporary accessories curated for every style. Complete catalogue with instant filtering.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=1200&q=80">
+
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       GLOBAL NAVIGATION BAR
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="luxe-container">
+      <div class="nav-inner">
+        
+        <!-- Brand Logo -->
+        <a href="index.html" class="luxe-logo" aria-label="LUXE VISION Homepage">
+          <div class="logo-monogram">
+            <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="22" cy="22" r="21" stroke="#C6A76A" stroke-width="1.2"/>
+              <path d="M12 14V30H22" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M22 14L28 30L34 14" stroke="#C6A76A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="16" cy="22" r="2.5" stroke="#C6A76A" stroke-width="1"/>
+              <circle cx="30" cy="22" r="2.5" stroke="currentColor" stroke-width="1"/>
+              <path d="M18.5 22H27.5" stroke="#C6A76A" stroke-width="1" stroke-dasharray="1 1"/>
+            </svg>
+          </div>
+          <div class="logo-text">
+            <span class="logo-title">LUXE VISION</span>
+            <span class="logo-subline">HAUTE EYEWEAR</span>
+          </div>
+        </a>
+
+        <!-- Center Navigation Links -->
+        <nav aria-label="Primary Navigation">
+          <ul class="nav-links">
+            <li><a href="index.html" class="nav-link-item">Home</a></li>
+            <li><a href="home-2.html" class="nav-link-item">Home 2</a></li>
+            <li><a href="products.html" class="nav-link-item active">Products</a></li>
+            <li><a href="brands.html" class="nav-link-item">Brands</a></li>
+            <li><a href="contact.html" class="nav-link-item">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Right Action Icons & CTA -->
+        <div class="nav-actions">
+          <button class="nav-icon-btn open-search-btn" aria-label="Open Search" title="Search catalog">
+            <i class="bi bi-search"></i>
+          </button>
+
+          <button class="nav-icon-btn open-wishlist-btn" aria-label="Open Wishlist" title="View Wishlist">
+            <i class="bi bi-heart"></i>
+            <span class="nav-badge wishlist-badge-count" style="display: none;">0</span>
+          </button>
+
+          <button class="nav-icon-btn open-bag-btn" aria-label="Open Shopping Bag" title="View Shopping Bag">
+            <i class="bi bi-bag"></i>
+            <span class="nav-badge bag-badge-count" style="display: none;">0</span>
+          </button>
+
+          <button class="nav-icon-btn theme-toggle-btn" aria-label="Toggle Theme" title="Toggle Light/Dark Theme">
+            <i class="bi bi-moon-stars"></i>
+          </button>
+
+          <!-- RTL Direction Toggle Button -->
+          <button class="nav-icon-btn rtl-toggle-btn" aria-label="Toggle RTL/LTR" title="Switch to RTL">
+            <span class="rtl-text">RTL</span>
+          </button>
+
+          <a href="products.html" class="btn-luxe btn-luxe-primary btn-luxe-sm nav-cta">Shop Now</a>
+
+          <button class="nav-hamburger-btn" aria-label="Toggle Mobile Menu" title="Menu">
+            <i class="bi bi-list"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       MOBILE OFF-CANVAS DRAWER
+       ========================================================================== -->
+  <aside class="mobile-nav-drawer" id="mobileNavDrawer" aria-label="Mobile Navigation">
+    <div class="mobile-nav-header">
+      <div class="luxe-logo">
+        <div class="logo-monogram">
+          <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="22" cy="22" r="21" stroke="#C6A76A" stroke-width="1.2"/>
+            <path d="M12 14V30H22" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M22 14L28 30L34 14" stroke="#C6A76A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="16" cy="22" r="2.5" stroke="#C6A76A" stroke-width="1"/>
+            <circle cx="30" cy="22" r="2.5" stroke="currentColor" stroke-width="1"/>
+            <path d="M18.5 22H27.5" stroke="#C6A76A" stroke-width="1" stroke-dasharray="1 1"/>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="logo-title">LUXE VISION</span>
+          <span class="logo-subline">HAUTE EYEWEAR</span>
+        </div>
+      </div>
+      <button class="mobile-nav-close" aria-label="Close Mobile Menu">
+        <i class="bi bi-x-lg"></i>
+      </button>
+    </div>
+
+    <ul class="mobile-nav-list">
+      <li><a href="index.html" class="mobile-nav-link">Home (Classic)</a></li>
+      <li><a href="home-2.html" class="mobile-nav-link">Home 2 (Editorial)</a></li>
+      <li><a href="products.html" class="mobile-nav-link active">Products</a></li>
+      <li><a href="brands.html" class="mobile-nav-link">Brands</a></li>
+      <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+    </ul>
+
+    <div class="mobile-nav-footer">
+      <div class="mobile-nav-actions">
+        <button class="nav-icon-btn open-search-btn" aria-label="Search">
+          <i class="bi bi-search"></i>
+        </button>
+        <button class="nav-icon-btn open-wishlist-btn" aria-label="Wishlist">
+          <i class="bi bi-heart"></i>
+          <span class="nav-badge wishlist-badge-count" style="display: none;">0</span>
+        </button>
+        <button class="nav-icon-btn open-bag-btn" aria-label="Bag">
+          <i class="bi bi-bag"></i>
+          <span class="nav-badge bag-badge-count" style="display: none;">0</span>
+        </button>
+        <button class="nav-icon-btn theme-toggle-btn" aria-label="Theme">
+          <i class="bi bi-moon-stars"></i>
+        </button>
+        <button class="nav-icon-btn rtl-toggle-btn" aria-label="Toggle RTL/LTR" title="Switch to RTL">
+          <span class="rtl-text">RTL</span>
+        </button>
+      </div>
+      <a href="products.html" class="btn-luxe btn-luxe-primary w-100 text-center">Shop The Collection</a>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       PAGE HERO HEADER (SPLIT WITH RIGHT SHOWCASE IMAGE)
+       ========================================================================== -->
+  <section class="page-hero-catalog section-spacer-sm position-relative overflow-hidden" style="background-color: var(--bg-secondary); border-bottom: 1px solid var(--border-subtle);">
+    <div class="luxe-container position-relative" style="z-index: 2;">
+      <div class="row align-items-center g-4 g-lg-5 py-3">
+        
+        <!-- Left Content Column -->
+        <div class="col-lg-7">
+          <span class="section-eyebrow text-gold d-inline-block">COMPLETE CATALOGUE</span>
+          <h1 class="h1-editorial mb-3">EXPLORE THE COLLECTION.</h1>
+          <p class="section-subtitle mb-4" style="max-width: 620px;">
+            Discover timeless eyewear and contemporary accessories curated for every style. Explore our full range of Italian acetate sunglasses, Swiss-inspired chronographs, artisanal leather belts, and structured caps.
+          </p>
+
+          <!-- Quick Highlights Pills -->
+          <div class="d-flex flex-wrap gap-2 pt-1">
+            <span class="spec-pill"><i class="bi bi-shield-check text-gold me-1"></i> 100% Authentic</span>
+            <span class="spec-pill"><i class="bi bi-truck text-gold me-1"></i> Complimentary Shipping</span>
+            <span class="spec-pill"><i class="bi bi-arrow-repeat text-gold me-1"></i> 30-Day Returns</span>
+          </div>
+        </div>
+
+        <!-- Right Hero Image Column -->
+        <div class="col-lg-5">
+          <div class="catalog-hero-image-wrap position-relative rounded-2 overflow-hidden shadow-lg" style="aspect-ratio: 16/11; background-color: var(--bg-tertiary); border: 1px solid var(--border-subtle);">
+            <img src="assets/images/V2XZN1ySH9K8ah1tJ5LrnXibHfy0FxmxUYJhRfbXDeQBrzUIBsbNi3o6SC2YkF7Foi70jN8KAuQlCVzZYIb-sSd8r14hKYQhbJcpBKedi-GmKOSE378wfZiAePXkPbP30lbBG8U4jzbreAa0irhJ3mcKJ5r1ji2RpA7W9qr2b.jpg" 
+                 alt="LUXE VISION Curated Eyewear & Accessories Collection" 
+                 style="width: 100%; height: 100%; object-fit: cover; transition: transform var(--transition-luxury);"
+                 loading="eager">
+            <div class="catalog-hero-badge position-absolute top-0 end-0 m-3 px-3 py-1 rounded-1 text-uppercase fw-bold" 
+                 style="font-size: 0.68rem; letter-spacing: 0.15em; background-color: rgba(17, 17, 17, 0.88); color: #F7F5F0; border: 1px solid rgba(198, 167, 106, 0.35); backdrop-filter: blur(6px);">
+              Season Edit 2026
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       PRODUCTS CATALOG SECTION
+       ========================================================================== -->
+  <main class="section-spacer" id="catalogMain">
+    <div class="luxe-container">
+      
+      <!-- Catalog Controls Toolbar -->
+      <div class="catalog-toolbar">
+        
+        <!-- Category Filter Tabs -->
+        <div class="category-filter-tabs" role="tablist" aria-label="Category Filters">
+          <button class="filter-tab-btn active" data-filter-category="all" role="tab" aria-selected="true">
+            All Products
+          </button>
+          <button class="filter-tab-btn" data-filter-category="sunglasses" role="tab" aria-selected="false">
+            Sunglasses
+          </button>
+          <button class="filter-tab-btn" data-filter-category="watches" role="tab" aria-selected="false">
+            Watches
+          </button>
+          <button class="filter-tab-btn" data-filter-category="belts" role="tab" aria-selected="false">
+            Belts
+          </button>
+          <button class="filter-tab-btn" data-filter-category="caps" role="tab" aria-selected="false">
+            Caps
+          </button>
+        </div>
+
+        <!-- Search, Brand & Sort Controls -->
+        <div class="catalog-actions-group">
+          
+          <!-- In-page Search Input -->
+          <div class="catalog-search-wrap">
+            <i class="bi bi-search catalog-search-icon"></i>
+            <input type="text" id="catalogSearchInput" class="catalog-search-input" placeholder="Search piece or feature...">
+          </div>
+
+          <!-- Brand Filter Select -->
+          <select id="catalogBrandSelect" class="catalog-sort-select" aria-label="Filter by Brand">
+            <option value="all">All Brands</option>
+            <option value="Ray-Ban">Ray-Ban</option>
+            <option value="Oakley">Oakley</option>
+            <option value="Vogue Eyewear">Vogue Eyewear</option>
+            <option value="Fossil">Fossil</option>
+            <option value="Casio">Casio</option>
+            <option value="Tommy Hilfiger">Tommy Hilfiger</option>
+            <option value="Police">Police</option>
+            <option value="Carrera">Carrera</option>
+          </select>
+
+          <!-- Sorting Select -->
+          <select id="catalogSortSelect" class="catalog-sort-select" aria-label="Sort products">
+            <option value="featured">Featured</option>
+            <option value="newest">Newest</option>
+            <option value="price-asc">Price: Low to High</option>
+            <option value="price-desc">Price: High to Low</option>
+            <option value="name-asc">Name: A to Z</option>
+          </select>
+
+        </div>
+
+      </div>
+
+      <!-- Live Count & Active Filter Indicator -->
+      <div class="product-count-bar">
+        <span id="productCountIndicator">Showing 24 pieces</span>
+        <button id="resetFiltersBtn" class="btn btn-sm btn-link text-decoration-none p-0 text-muted" style="display: none; font-size: 0.8rem;">
+          <i class="bi bi-x-circle"></i> Clear Filters
+        </button>
+      </div>
+
+      <!-- Dynamic Product Cards Grid -->
+      <div class="products-grid-container" id="productsCatalogGrid">
+        <!-- Rendered dynamically via JavaScript -->
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ==========================================================================
+       SECTION 1: THE PRECISION FIT GUIDE (CURATED SILHOUETTES & FACIAL GEOMETRY)
+       ========================================================================== -->
+  <section class="section-spacer" style="border-top: 1px solid var(--border-subtle); background-color: var(--bg-primary);">
+    <div class="luxe-container">
+      
+      <div class="section-header text-center mx-auto" style="max-width: 780px;">
+        <span class="section-eyebrow text-gold d-inline-block" style="padding-left: 0 !important;">PRECISION FIT GUIDE</span>
+        <h2 class="h2-editorial mb-3 text-center">CURATED SILHOUETTES & FACIAL GEOMETRY</h2>
+        <p class="section-subtitle mx-auto" style="margin-left: auto; margin-right: auto; max-width: 640px;">
+          Match your facial contours with our master frame cuts — engineered for optimal weight distribution, cheekbone balance, and all-day temple comfort.
+        </p>
+      </div>
+
+      <div class="row g-4 pt-2">
+
+        <!-- Silhouette 1: Aviator & Navigator -->
+        <div class="col-sm-6 col-lg-3">
+          <div class="craft-pillar-card d-flex flex-column h-100 p-4">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <span class="badge" style="background-color: var(--accent-gold-soft); color: var(--accent-gold); font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 700; padding: 0.35rem 0.75rem;">TEARDROP & DUAL-BRIDGE</span>
+              <span class="small text-muted fw-bold">SERIES 01</span>
+            </div>
+            <div class="mb-3 rounded overflow-hidden" style="height: 140px; background-color: var(--bg-tertiary);">
+              <img src="assets/images/zHHHblwI6F1cdL_qODhdqsNgDrVxmsEJsvM60ezTktEHRjE22MUUTJcXW5lwlyDxkUGagxkEHNa6iQhiz9G0Vxj3GSzXa1nIW6MTmUNJ0clGaDk5zpTjH8Bq807kmD1wzo2DvnPp9NbdCYxioT-vm46Ng499AbZcWX026K0H9.jpg"
+                alt="Aviator Silhouette" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <h3 style="font-size: 1.15rem; margin-bottom: 0.4rem;">Aviator & Navigator</h3>
+            <div class="small fw-semibold text-gold mb-2">Ideal for Square & Oval Profiles</div>
+            <p class="small text-secondary mb-4 flex-grow-1">
+              Engineered with slender beta-titanium wire rims and floating bridge lines that visually soften prominent jawlines and elongate angular facial planes.
+            </p>
+            <div class="mt-auto">
+              <a href="#catalogMain" onclick="filterCatalogSilhouette('sunglasses', 'Aviator')" class="btn-luxe btn-luxe-secondary btn-luxe-sm w-100 justify-content-center">
+                <span>VIEW AVIATORS</span>
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Silhouette 2: Wayfarer & Square -->
+        <div class="col-sm-6 col-lg-3">
+          <div class="craft-pillar-card d-flex flex-column h-100 p-4">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <span class="badge" style="background-color: var(--accent-gold-soft); color: var(--accent-gold); font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 700; padding: 0.35rem 0.75rem;">BLOCK ACETATE</span>
+              <span class="small text-muted fw-bold">SERIES 02</span>
+            </div>
+            <div class="mb-3 rounded overflow-hidden" style="height: 140px; background-color: var(--bg-tertiary);">
+              <img src="assets/images/cZ_R0JsXAwuFjIxNyCpJrNSMvY_2sxC0toAureuLaL_93H-rz6_L97_i1m6A_8thb8fWI6KuZtxBIDsWPBISHsrSmOki5AjTytR18d11C2edfBsN6I9b_5xV34K4oAmg2kxEZxLQAT-95p621QW3HEFNIDLTTLaFVUDqUB6vo.jpg"
+                alt="Wayfarer Silhouette" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <h3 style="font-size: 1.15rem; margin-bottom: 0.4rem;">Wayfarer & Square</h3>
+            <div class="small fw-semibold text-gold mb-2">Ideal for Round & Oval Profiles</div>
+            <p class="small text-secondary mb-4 flex-grow-1">
+              Chamfered 8mm Italian cellulose slabs with pronounced temple shoulders that add structural definition, balance rounder cheeks, and frame the browline.
+            </p>
+            <div class="mt-auto">
+              <a href="#catalogMain" onclick="filterCatalogSilhouette('sunglasses', 'Wayfarer')" class="btn-luxe btn-luxe-secondary btn-luxe-sm w-100 justify-content-center">
+                <span>VIEW WAYFARERS</span>
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Silhouette 3: Cat-Eye & Butterfly -->
+        <div class="col-sm-6 col-lg-3">
+          <div class="craft-pillar-card d-flex flex-column h-100 p-4">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <span class="badge" style="background-color: var(--accent-gold-soft); color: var(--accent-gold); font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 700; padding: 0.35rem 0.75rem;">ARCHITECTURAL FLAIR</span>
+              <span class="small text-muted fw-bold">SERIES 03</span>
+            </div>
+            <div class="mb-3 rounded overflow-hidden" style="height: 140px; background-color: var(--bg-tertiary);">
+              <img src="assets/images/Vb-T75htgJCyShDnQoSnzcndaJH4CKhSPjOClivTqAoA9HpR-B3VB4JsOShQUQjLZliCnsANoLgZA_X11CdZKFt3BaCCOKklw5NGLA_6IUdjCMQZ9TlYj0DLGbOF39uJtKW36vZ41zUqqw1mo-5mkP0lsQzAK0_KtATUMMYoV.jpg"
+                alt="Cat-Eye Silhouette" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <h3 style="font-size: 1.15rem; margin-bottom: 0.4rem;">Cat-Eye & Butterfly</h3>
+            <div class="small fw-semibold text-gold mb-2">Ideal for Diamond & Heart Profiles</div>
+            <p class="small text-secondary mb-4 flex-grow-1">
+              Upswept lateral temples and sculpted micro-bevels create an optical lifting effect that accentuates high cheekbones and adds high-fashion drama.
+            </p>
+            <div class="mt-auto">
+              <a href="#catalogMain" onclick="filterCatalogSilhouette('sunglasses', 'Cat-Eye')" class="btn-luxe btn-luxe-secondary btn-luxe-sm w-100 justify-content-center">
+                <span>VIEW CAT-EYE</span>
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Silhouette 4: Round & Pantos -->
+        <div class="col-sm-6 col-lg-3">
+          <div class="craft-pillar-card d-flex flex-column h-100 p-4">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <span class="badge" style="background-color: var(--accent-gold-soft); color: var(--accent-gold); font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 700; padding: 0.35rem 0.75rem;">INTELLECTUAL MINIMAL</span>
+              <span class="small text-muted fw-bold">SERIES 04</span>
+            </div>
+            <div class="mb-3 rounded overflow-hidden" style="height: 140px; background-color: var(--bg-tertiary);">
+              <img src="assets/images/f0ASDQMSnR8zlUtXmrJAYUg6sNpRz9vD5CfO7uWlcvajiWxDIdIz78jWmNQOGgdMnkOIOzIou7na-P9QYcVFQr55aPZqSn2OhLTvukbDA6Qbd6m7DEEF5Co2Y8Udo5v2u_LWnzs5jgZXDS7NqtHfAtxDu2Q2p3dqHuICkJiJP.jpg"
+                alt="Round Pantos Silhouette" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <h3 style="font-size: 1.15rem; margin-bottom: 0.4rem;">Round & Pantos</h3>
+            <div class="small fw-semibold text-gold mb-2">Ideal for Square & Rectangular Profiles</div>
+            <p class="small text-secondary mb-4 flex-grow-1">
+              Classic keyhole bridges with circular contours crafted to harmonize strong bone structures and project artistic intellectual poise.
+            </p>
+            <div class="mt-auto">
+              <a href="#catalogMain" onclick="filterCatalogSilhouette('sunglasses', 'Round')" class="btn-luxe btn-luxe-secondary btn-luxe-sm w-100 justify-content-center">
+                <span>VIEW ROUND CUTS</span>
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 2: COMPLIMENTARY CONCIERGE & CARE SUITE
+       ========================================================================== -->
+  <section class="vip-concierge-section section-spacer" style="border-top: 1px solid var(--border-subtle);">
+    <div class="luxe-container">
+      
+      <div class="vip-concierge-inner">
+        <div class="row align-items-center g-5">
+          
+          <!-- Left Column: White Glove Content & Perks -->
+          <div class="col-lg-7">
+            <span class="section-eyebrow text-gold d-inline-block" style="padding-left: 0 !important;">WHITE GLOVE EXPERIENCE</span>
+            <h2 class="h2-editorial mb-3 text-white">COMPLIMENTARY CONCIERGE & CARE SUITE</h2>
+            <p class="text-muted mb-4" style="font-size: 1.05rem; line-height: 1.6; max-width: 600px;">
+              Every creation curated from our catalogue is accompanied by signature packaging, serialized provenance documentation, and lifelong optical tuning.
+            </p>
+
+            <div class="row g-4 mb-4">
+              
+              <div class="col-sm-6">
+                <div class="d-flex align-items-start gap-3">
+                  <div class="flex-shrink-0 d-flex align-items-center justify-content-center rounded-circle"
+                    style="width: 44px; height: 44px; background: rgba(198, 167, 106, 0.15); border: 1px solid rgba(198, 167, 106, 0.4); color: var(--accent-gold); font-size: 1.2rem;">
+                    <i class="bi bi-shield-check"></i>
+                  </div>
+                  <div>
+                    <h4 class="text-white mb-1" style="font-size: 0.95rem; letter-spacing: 0.05em; text-transform: uppercase; font-family: var(--font-body); font-weight: 700;">Insured Security Courier</h4>
+                    <p class="small text-muted mb-0">Discreet tamper-evident luxury presentation packaging with worldwide tracked courier dispatch.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="d-flex align-items-start gap-3">
+                  <div class="flex-shrink-0 d-flex align-items-center justify-content-center rounded-circle"
+                    style="width: 44px; height: 44px; background: rgba(198, 167, 106, 0.15); border: 1px solid rgba(198, 167, 106, 0.4); color: var(--accent-gold); font-size: 1.2rem;">
+                    <i class="bi bi-box-seam"></i>
+                  </div>
+                  <div>
+                    <h4 class="text-white mb-1" style="font-size: 0.95rem; letter-spacing: 0.05em; text-transform: uppercase; font-family: var(--font-body); font-weight: 700;">Hard-Shell Case & Cloth</h4>
+                    <p class="small text-muted mb-0">Bespoke magnetic textured leather case paired with velvet-touch microfiber cleaning set.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="d-flex align-items-start gap-3">
+                  <div class="flex-shrink-0 d-flex align-items-center justify-content-center rounded-circle"
+                    style="width: 44px; height: 44px; background: rgba(198, 167, 106, 0.15); border: 1px solid rgba(198, 167, 106, 0.4); color: var(--accent-gold); font-size: 1.2rem;">
+                    <i class="bi bi-tools"></i>
+                  </div>
+                  <div>
+                    <h4 class="text-white mb-1" style="font-size: 0.95rem; letter-spacing: 0.05em; text-transform: uppercase; font-family: var(--font-body); font-weight: 700;">Lifetime Optical Tuning</h4>
+                    <p class="small text-muted mb-0">Complimentary ultrasonic cleaning, screw tension recalibration, and nose pad replacement.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="d-flex align-items-start gap-3">
+                  <div class="flex-shrink-0 d-flex align-items-center justify-content-center rounded-circle"
+                    style="width: 44px; height: 44px; background: rgba(198, 167, 106, 0.15); border: 1px solid rgba(198, 167, 106, 0.4); color: var(--accent-gold); font-size: 1.2rem;">
+                    <i class="bi bi-house-door"></i>
+                  </div>
+                  <div>
+                    <h4 class="text-white mb-1" style="font-size: 0.95rem; letter-spacing: 0.05em; text-transform: uppercase; font-family: var(--font-body); font-weight: 700;">30-Day Salon Fitting</h4>
+                    <p class="small text-muted mb-0">Experience selected pieces in your natural lighting with complimentary return shipping concierge.</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Action CTAs -->
+            <div class="d-flex flex-wrap gap-3 pt-2">
+              <a href="contact.html" class="btn-luxe btn-luxe-primary">
+                <span>SCHEDULE STYLING APPOINTMENT</span>
+                <i class="bi bi-calendar-check"></i>
+              </a>
+              <a href="brands.html" class="btn-luxe btn-luxe-secondary">
+                <span>EXPLORE DESIGN HOUSES</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Right Column: Showroom Fitting Salon Showcase Image -->
+          <div class="col-lg-5">
+            <div class="position-relative rounded-1 overflow-hidden shadow-2xl"
+              style="aspect-ratio: 16/11; border: 1px solid rgba(198, 167, 106, 0.35); background-color: #0d0d0d;">
+              <img src="assets/images/1xZ93dwdbeW4jYpLtTCV10HDCvyCqh0c1i3EpszsurTbykBrNQPqGqapxxBEfJd5cNEdeYavB1y3fD4B0ky9nqVig_tj9jLpSBxaG1Ybzi7LlKAGiDFxgbQ9dzKsTz5Aa-EhEcxRY71mJ1CpmM2dZLBkORH8nVHvet4jUqsvV.jpg"
+                alt="LUXE VISION Flagship Showroom Fitting Salon"
+                style="width: 100%; height: 100%; object-fit: cover;">
+              <div class="position-absolute bottom-0 start-0 end-0 p-3"
+                style="background: linear-gradient(to top, rgba(10,10,10,0.85) 0%, transparent 100%);">
+                <span class="badge" style="background: rgba(198, 167, 106, 0.25); color: #C6A76A; border: 1px solid rgba(198, 167, 106, 0.5); font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase;">
+                  <i class="bi bi-award me-1"></i> PRIVATE SALON SERVICE • 1-ON-1 STYLING
+                </span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="luxe-container">
+      <div class="footer-top-grid">
+        
+        <!-- Brand Info Col -->
+        <div class="footer-brand-col">
+          <a href="index.html" class="luxe-logo">
+            <div class="logo-monogram">
+              <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="22" cy="22" r="21" stroke="#C6A76A" stroke-width="1.2"/>
+                <path d="M12 14V30H22" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M22 14L28 30L34 14" stroke="#C6A76A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="16" cy="22" r="2.5" stroke="#C6A76A" stroke-width="1"/>
+                <circle cx="30" cy="22" r="2.5" stroke="#FFFFFF" stroke-width="1"/>
+                <path d="M18.5 22H27.5" stroke="#C6A76A" stroke-width="1" stroke-dasharray="1 1"/>
+              </svg>
+            </div>
+            <div class="logo-text">
+              <span class="logo-title text-white">LUXE VISION</span>
+              <span class="logo-subline">HAUTE EYEWEAR</span>
+            </div>
+          </a>
+          
+          <div class="footer-tagline">SEE THE WORLD DIFFERENTLY.</div>
+          <p class="small text-muted" style="max-width: 380px;">
+            Where timeless style meets modern expression. Curating premier sunglasses and fine accessories for international connoisseurs.
+          </p>
+
+          <div class="newsletter-form-box">
+            <div class="small text-uppercase mb-2" style="font-size: 0.72rem; letter-spacing: 0.14em; color: var(--accent-gold);">
+              JOIN THE PRIVATE EDIT
+            </div>
+            <form class="newsletter-form">
+              <div class="newsletter-input-group">
+                <input type="email" class="newsletter-input" placeholder="Your email address" required aria-label="Email address for newsletter">
+                <button type="submit" class="newsletter-submit-btn" aria-label="Subscribe">
+                  <i class="bi bi-arrow-right"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="footer-col-title">QUICK LINKS</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html" class="footer-link">Home (Classic)</a></li>
+            <li><a href="home-2.html" class="footer-link">Home 2 (Editorial)</a></li>
+            <li><a href="products.html" class="footer-link">Products</a></li>
+            <li><a href="brands.html" class="footer-link">Brands</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Shop Categories -->
+        <div>
+          <h4 class="footer-col-title">SHOP CATEGORIES</h4>
+          <ul class="footer-links-list">
+            <li><a href="products.html?category=sunglasses" class="footer-link">Sunglasses</a></li>
+            <li><a href="products.html?category=watches" class="footer-link">Watches</a></li>
+            <li><a href="products.html?category=belts" class="footer-link">Belts</a></li>
+            <li><a href="products.html?category=caps" class="footer-link">Caps</a></li>
+          </ul>
+        </div>
+
+        <!-- Customer Support -->
+        <div>
+          <h4 class="footer-col-title">CUSTOMER CARE</h4>
+          <ul class="footer-links-list">
+            <li><a href="contact.html" class="footer-link">Contact Us</a></li>
+            <li><a href="contact.html#store-info" class="footer-link">Store Information</a></li>
+            <li><a href="javascript:void(0)" class="footer-link open-bag-btn">Shopping Bag</a></li>
+            <li><a href="javascript:void(0)" class="footer-link open-wishlist-btn">Wishlist</a></li>
+          </ul>
+
+          <div class="mt-4">
+            <h4 class="footer-col-title" style="margin-bottom: 0.8rem;">FOLLOW US</h4>
+            <div class="footer-social-row">
+              <a href="#" class="social-icon-circle" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="social-icon-circle" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="social-icon-circle" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+              <a href="#" class="social-icon-circle" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div>
+          &copy; 2026 LUXE VISION. All rights reserved. Premium Sunglasses & Fashion Accessories.
+        </div>
+        <div>
+          Designed for Luxury Fashion Editorial Commerce.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       SIDE DRAWERS, MODALS & GLOBAL OVERLAYS
+       ========================================================================== -->
+
+  <!-- Backdrop Overlay -->
+  <div class="backdrop-overlay" id="backdropOverlay"></div>
+
+  <!-- Shopping Bag Side Drawer -->
+  <aside class="side-drawer" id="bagDrawer" aria-label="Shopping Bag">
+    <div class="drawer-header">
+      <h3 class="font-heading">Shopping Bag</h3>
+      <button class="drawer-close-btn close-bag-btn" aria-label="Close bag">
+        <i class="bi bi-x-lg"></i>
+      </button>
+    </div>
+    <div class="drawer-body" id="bagDrawerBody"></div>
+    <div class="drawer-footer" id="bagDrawerFooter">
+      <div class="drawer-summary-row">
+        <span>Subtotal</span>
+        <span id="bagSubtotal">₹0</span>
+      </div>
+      <div class="drawer-summary-row small text-muted">
+        <span>Shipping & Insurance</span>
+        <span class="text-success">Complimentary</span>
+      </div>
+      <div class="drawer-summary-row drawer-summary-total">
+        <span>Estimated Total</span>
+        <span id="bagTotal">₹0</span>
+      </div>
+      <button class="btn-luxe btn-luxe-primary w-100 mt-3" onclick="showToast('Frontend Demo Experience: Checkout not connected to live payments.', 'bi-info-circle')">
+        PROCEED TO CHECKOUT
+      </button>
+      <div class="demo-notice">
+        Demo store experience • No real payment processed
+      </div>
+    </div>
+  </aside>
+
+  <!-- Wishlist Side Drawer -->
+  <aside class="side-drawer" id="wishlistDrawer" aria-label="Wishlist">
+    <div class="drawer-header">
+      <h3 class="font-heading">My Wishlist</h3>
+      <button class="drawer-close-btn close-wishlist-btn" aria-label="Close wishlist">
+        <i class="bi bi-x-lg"></i>
+      </button>
+    </div>
+    <div class="drawer-body" id="wishlistDrawerBody"></div>
+  </aside>
+
+  <!-- Search Overlay -->
+  <div class="search-overlay" id="searchOverlay" aria-label="Search Overlay">
+    <div class="search-overlay-inner">
+      <div class="search-overlay-header">
+        <button class="search-close-btn" aria-label="Close search">
+          <i class="bi bi-x-lg"></i>
+        </button>
+      </div>
+      <div class="search-input-large-wrap">
+        <i class="bi bi-search search-input-large-icon"></i>
+        <input type="text" id="searchLargeInput" class="search-input-large" placeholder="Search by name, category, or brand..." autocomplete="off">
+      </div>
+      <div class="search-live-results" id="searchLiveResults"></div>
+    </div>
+  </div>
+
+  <!-- Quick View Modal -->
+  <div class="modal fade" id="quickViewModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered quick-view-dialog">
+      <div class="modal-content modal-content-luxe">
+        <button type="button" class="modal-close-luxe" data-bs-dismiss="modal" aria-label="Close">
+          <i class="bi bi-x-lg"></i>
+        </button>
+        <div class="quickview-grid">
+          <div class="quickview-img-wrap">
+            <img id="qvImage" src="" alt="Product preview">
+          </div>
+          <div class="quickview-details">
+            <div id="qvBrand" class="quickview-brand">LUXE VISION</div>
+            <h3 id="qvTitle" class="quickview-title">Product Name</h3>
+            <div class="quickview-prices">
+              <span id="qvPrice" class="quickview-price-main">₹0</span>
+              <span id="qvPriceOrig" class="quickview-price-orig">₹0</span>
+            </div>
+            <p id="qvDescription" class="quickview-desc">Product description...</p>
+            <ul id="qvSpecs" class="quickview-specs"></ul>
+            <div class="quickview-actions">
+              <div class="drawer-qty-controls" style="height: 44px;">
+                <button class="drawer-qty-btn" onclick="const input = document.getElementById('qvQtyInput'); if(Number(input.value) > 1) input.value = Number(input.value) - 1;">-</button>
+                <input type="text" id="qvQtyInput" value="1" readonly class="text-center border-0 bg-transparent" style="width: 36px; font-weight: 600; color: inherit;">
+                <button class="drawer-qty-btn" onclick="const input = document.getElementById('qvQtyInput'); input.value = Number(input.value) + 1;">+</button>
+              </div>
+              <button id="qvAddBtn" class="btn-luxe btn-luxe-primary flex-grow-1" style="height: 44px;">
+                <i class="bi bi-bag-plus"></i> ADD TO BAG
+              </button>
+              <button id="qvWishlistBtn" class="card-action-btn" style="width: 44px; height: 44px; border-radius: 4px;" aria-label="Save to Wishlist">
+                <i class="bi bi-heart"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Container -->
+  <div class="toast-container-luxe" id="toastContainer"></div>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top-btn" id="backToTopBtn" aria-label="Back to top" title="Scroll to top">
+    <i class="bi bi-chevron-up"></i>
+  </button>
+
+  <!-- Bootstrap 5 Bundle JS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Main Script -->
+  <script src="assets/js/main.js"></script>
+
+  <!-- Interactive Catalog Controller Script -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // Elements
+      const grid = document.getElementById("productsCatalogGrid");
+      const countIndicator = document.getElementById("productCountIndicator");
+      const categoryTabs = document.querySelectorAll("[data-filter-category]");
+      const searchInput = document.getElementById("catalogSearchInput");
+      const brandSelect = document.getElementById("catalogBrandSelect");
+      const sortSelect = document.getElementById("catalogSortSelect");
+      const resetBtn = document.getElementById("resetFiltersBtn");
+
+      // Filter State
+      let currentCategory = "all";
+      let currentBrand = "all";
+      let currentSearch = "";
+      let currentSort = "featured";
+
+      // Parse URL Search Parameters (?category=... or ?brand=... or ?search=...)
+      const urlParams = new URLSearchParams(window.location.search);
+      const paramCat = urlParams.get("category");
+      const paramBrand = urlParams.get("brand");
+      const paramSearch = urlParams.get("search");
+
+      if (paramCat && ["sunglasses", "watches", "belts", "caps"].includes(paramCat.toLowerCase())) {
+        currentCategory = paramCat.toLowerCase();
+        categoryTabs.forEach(tab => {
+          if (tab.getAttribute("data-filter-category") === currentCategory) {
+            tab.classList.add("active");
+            tab.setAttribute("aria-selected", "true");
+          } else {
+            tab.classList.remove("active");
+            tab.setAttribute("aria-selected", "false");
+          }
+        });
+      }
+
+      if (paramBrand) {
+        currentBrand = paramBrand;
+        if (brandSelect) brandSelect.value = paramBrand;
+      }
+
+      if (paramSearch) {
+        currentSearch = paramSearch;
+        if (searchInput) searchInput.value = paramSearch;
+      }
+
+      // Render Catalog Function
+      function filterAndRender() {
+        let results = [...LUXE_PRODUCTS];
+
+        // 1. Category Filter
+        if (currentCategory !== "all") {
+          results = results.filter(p => p.category.toLowerCase() === currentCategory.toLowerCase());
+        }
+
+        // 2. Brand Filter
+        if (currentBrand !== "all") {
+          results = results.filter(p => p.brand.toLowerCase() === currentBrand.toLowerCase());
+        }
+
+        // 3. Search Filter
+        if (currentSearch.trim() !== "") {
+          const query = currentSearch.toLowerCase().trim();
+          results = results.filter(p => 
+            p.name.toLowerCase().includes(query) ||
+            p.brand.toLowerCase().includes(query) ||
+            p.category.toLowerCase().includes(query) ||
+            p.description.toLowerCase().includes(query)
+          );
+        }
+
+        // 4. Sorting
+        if (currentSort === "price-asc") {
+          results.sort((a, b) => a.price - b.price);
+        } else if (currentSort === "price-desc") {
+          results.sort((a, b) => b.price - a.price);
+        } else if (currentSort === "name-asc") {
+          results.sort((a, b) => a.name.localeCompare(b.name));
+        } else if (currentSort === "newest") {
+          results.sort((a, b) => (b.newArrival ? 1 : 0) - (a.newArrival ? 1 : 0));
+        } else {
+          // featured
+          results.sort((a, b) => (b.featured ? 1 : 0) - (a.featured ? 1 : 0));
+        }
+
+        // Update Count Indicator
+        if (countIndicator) {
+          countIndicator.textContent = `Showing ${results.length} of ${LUXE_PRODUCTS.length} pieces`;
+        }
+
+        // Toggle Reset Button
+        const isFiltered = currentCategory !== "all" || currentBrand !== "all" || currentSearch.trim() !== "";
+        if (resetBtn) {
+          resetBtn.style.display = isFiltered ? "inline-flex" : "none";
+        }
+
+        // Render Grid
+        if (results.length === 0) {
+          grid.innerHTML = `
+            <div class="empty-catalog-state">
+              <i class="bi bi-binoculars"></i>
+              <h3 class="font-heading mb-2">No Pieces Match Your Criteria</h3>
+              <p class="text-muted small mb-4">Try relaxing your search terms, selecting "All Products", or clearing brand filters.</p>
+              <button class="btn-luxe btn-luxe-primary btn-luxe-sm" id="emptyResetBtn">
+                Reset All Filters
+              </button>
+            </div>
+          `;
+          const emptyBtn = document.getElementById("emptyResetBtn");
+          if (emptyBtn) emptyBtn.addEventListener("click", resetAllFilters);
+        } else {
+          grid.innerHTML = results.map(product => createProductCardHTML(product)).join("");
+          // Re-sync wishlist button active states
+          updateCardWishlistButtons();
+        }
+      }
+
+      function resetAllFilters() {
+        currentCategory = "all";
+        currentBrand = "all";
+        currentSearch = "";
+        currentSort = "featured";
+
+        categoryTabs.forEach(t => {
+          if (t.getAttribute("data-filter-category") === "all") {
+            t.classList.add("active");
+            t.setAttribute("aria-selected", "true");
+          } else {
+            t.classList.remove("active");
+            t.setAttribute("aria-selected", "false");
+          }
+        });
+
+        if (searchInput) searchInput.value = "";
+        if (brandSelect) brandSelect.value = "all";
+        if (sortSelect) sortSelect.value = "featured";
+
+        // Remove query parameters from URL cleanly
+        window.history.replaceState({}, document.title, window.location.pathname);
+        filterAndRender();
+      }
+
+      // Event Listeners
+      categoryTabs.forEach(tab => {
+        tab.addEventListener("click", () => {
+          categoryTabs.forEach(t => {
+            t.classList.remove("active");
+            t.setAttribute("aria-selected", "false");
+          });
+          tab.classList.add("active");
+          tab.setAttribute("aria-selected", "true");
+          currentCategory = tab.getAttribute("data-filter-category");
+          filterAndRender();
+        });
+      });
+
+      if (searchInput) {
+        searchInput.addEventListener("input", (e) => {
+          currentSearch = e.target.value;
+          filterAndRender();
+        });
+      }
+
+      if (brandSelect) {
+        brandSelect.addEventListener("change", (e) => {
+          currentBrand = e.target.value;
+          filterAndRender();
+        });
+      }
+
+      if (sortSelect) {
+        sortSelect.addEventListener("change", (e) => {
+          currentSort = e.target.value;
+          filterAndRender();
+        });
+      }
+
+      if (resetBtn) {
+        resetBtn.addEventListener("click", resetAllFilters);
+      }
+
+      // Global helper for silhouette fit guide
+      window.filterCatalogSilhouette = function(category, term) {
+        if (category) {
+          categoryTabs.forEach(t => {
+            if (t.getAttribute("data-filter-category") === category) {
+              t.click();
+            }
+          });
+        }
+        if (searchInput && term) {
+          searchInput.value = term;
+          searchInput.dispatchEvent(new Event("input"));
+        }
+        const catalogEl = document.getElementById("catalogMain");
+        if (catalogEl) {
+          catalogEl.scrollIntoView({ behavior: "smooth" });
+        }
+      };
+
+      // Initial execution
+      filterAndRender();
+    });
+  </script>
+</body>
+</html>
+
