@@ -142,7 +142,7 @@ const LUXE_PRODUCTS = [
     brand: "Casio",
     price: 11490,
     originalPrice: 13990,
-    image: "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?auto=format&fit=crop&w=800&q=80",
+    image: "assets/images/watch_chrono_black.jpg",
     badge: "Precision",
     featured: false,
     newArrival: false,
@@ -156,7 +156,7 @@ const LUXE_PRODUCTS = [
     brand: "Tommy Hilfiger",
     price: 12990,
     originalPrice: 15490,
-    image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=80",
+    image: "assets/images/watch_minimal_silver.jpg",
     badge: "Minimalist",
     featured: true,
     newArrival: false,
@@ -184,7 +184,7 @@ const LUXE_PRODUCTS = [
     brand: "Casio",
     price: 16490,
     originalPrice: 19990,
-    image: "https://images.unsplash.com/photo-1526045612212-70caf35c14df?auto=format&fit=crop&w=800&q=80",
+    image: "assets/images/watch.jpg",
     badge: "Luxury Edition",
     featured: false,
     newArrival: false,
@@ -198,7 +198,7 @@ const LUXE_PRODUCTS = [
     brand: "Tommy Hilfiger",
     price: 13490,
     originalPrice: 15990,
-    image: "https://images.unsplash.com/photo-1547996160-01ff67ab7d02?auto=format&fit=crop&w=800&q=80",
+    image: "assets/images/watch1.jpg",
     badge: "Contemporary",
     featured: false,
     newArrival: false,
@@ -314,7 +314,7 @@ const LUXE_PRODUCTS = [
     brand: "Police",
     price: 2990,
     originalPrice: 3690,
-    image: "https://images.unsplash.com/photo-1534215754734-18e55d13e346?auto=format&fit=crop&w=800&q=80",
+    image: "assets/images/cap_premium_logo.jpg",
     badge: "Signature",
     featured: false,
     newArrival: false,
@@ -328,7 +328,7 @@ const LUXE_PRODUCTS = [
     brand: "Tommy Hilfiger",
     price: 2590,
     originalPrice: 3190,
-    image: "https://images.unsplash.com/photo-1556306535-0f09a537f0a3?auto=format&fit=crop&w=800&q=80",
+    image: "assets/images/cap_minimal_navy.jpg",
     badge: "Essential",
     featured: false,
     newArrival: false,
@@ -342,7 +342,7 @@ const LUXE_PRODUCTS = [
     brand: "Casio",
     price: 2290,
     originalPrice: 2890,
-    image: "https://images.unsplash.com/photo-1622445268067-15d2a8b9e69c?auto=format&fit=crop&w=800&q=80",
+    image: "assets/images/cap_everyday_cotton.jpg",
     badge: "Daily Essential",
     featured: false,
     newArrival: false,
@@ -931,6 +931,16 @@ function openQuickView(productId) {
   const bsModal = new bootstrap.Modal(modalEl);
   bsModal.show();
 }
+
+// --- QUICK VIEW QUANTITY CONTROLLER ---
+function adjustQuickViewQty(delta) {
+  const qvInput = document.getElementById("qvQtyInput");
+  if (qvInput) {
+    const current = parseInt(qvInput.value, 10) || 1;
+    qvInput.value = Math.max(1, current + delta);
+  }
+}
+window.adjustQuickViewQty = adjustQuickViewQty;
 
 // --- PRODUCT CARD COMPONENT GENERATOR ---
 function createProductCardHTML(product) {
